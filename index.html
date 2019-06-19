@@ -31,6 +31,25 @@
  			border-collapse: collapse;
 			}
 			
+			
+			* {
+			  box-sizing: border-box;
+			}
+
+			.column {
+				float: left;
+				width: 50%;
+				padding: 5px;
+			}
+
+			/* Clearfix (clear floats) */
+			.row::after {
+				content: "";
+				clear: both;
+				display: table;
+			}
+			
+			
 		</style>
 		
 		
@@ -117,6 +136,21 @@
 				<!-- Main -->
 					<div id="main">
 						
+						
+						<!--Post-->
+							<article class="post">
+								<div class="row">
+  									<div class="column">
+										<h3 style="text-align:center">Campeón de La Liga</h3>
+   										<img src="images/cuervosforever.jpg" style="width:100%">
+									</div>
+									<div class="column">
+										<h3 style="text-align:center">Campeón de la Copa Cuervos</h3>
+										<img src="images/pikachu.jpg" style="width:100%">
+									</div>
+								</div>
+								
+							</article>
 						
 						<!-- Post -->
 							<article class="post">
