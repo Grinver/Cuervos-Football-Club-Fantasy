@@ -87,6 +87,56 @@
 		</style>
 		
 		<script>
+		window.onload = function () {
+
+		var chart = new CanvasJS.Chart("chartLigarace", {
+			animationEnabled: true,
+			theme: "light2",
+			title: {
+				text: "La Liga Race"
+			},
+			axisX: {
+				title: "Matchday"
+			},
+			axisY2: {
+				title: "Points",
+			},
+			toolTip: {
+				shared: true
+			},
+			legend: {
+				cursor: "pointer",
+				verticalAlign: "top",
+				horizontalAlign: "center",
+				dockInsidePlotArea: true,
+				itemclick: toogleDataSeries
+			},
+			data: [{
+				type: "line",
+				name: "Alfredo",
+				indexLabelFontSize: 16,
+					dataPoints: [
+						{ y: 0},
+						{ y: 60},
+					]
+				},
+			{
+				type: "line",
+				name: "Genaro",
+				indexLabelFontSize: 16,
+					dataPoints: [
+						{ y: 0},
+						{ y: 59},
+					]
+				}]
+		});
+		chart.render();
+
+
+		}
+		</script>
+		
+		<script type="text/javascript">
 			var LigaCanvas = document.getElementById("LigaChart");
 
 			Chart.defaults.global.defaultFontFamily = "Lato";
@@ -453,8 +503,8 @@
 										</tr>
  								 </table>
 								<h4 style="text-align:center">La Liga Race</h4>
-								<div style="display: flex; justify-content: center;">
-									<canvas id="LigaChart"></canvas>
+								<div id="chartLigarace" style="height: 300px; width: 100%;"></div>
+								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 								</div>
 							
 							
