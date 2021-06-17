@@ -95,16 +95,27 @@
 			title:{
 				text: "Simple Line Chart"
 			},
+			legend: {
+				cursor: "pointer",
+				verticalAlign: "top",
+				horizontalAlign: "center",
+				dockInsidePlotArea: true,
+				itemclick: toogleDataSeries
+			},
 			data: [{        
 				type: "line",
+				name: "Alfredo",
+				showInLegend: true,
 			indexLabelFontSize: 16,
 				dataPoints: [
-					{ y: 450 },
-					{ y: 414}
+					{ y: 0 },
+					{ y: 60}
 				]
 			},
 		       {        
 				type: "line",
+				name: "Genaro",
+			        showInLegend: true,
 			indexLabelFontSize: 16,
 				dataPoints: [
 					{ y: 0 },
@@ -113,6 +124,15 @@
 			}]
 		});
 		chart.render();
+			
+		function toogleDataSeries(e){
+			if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+				e.dataSeries.visible = false;
+			} else{
+				e.dataSeries.visible = true;
+			}
+			chart.render();
+		}	
 
 		}
 		</script>
