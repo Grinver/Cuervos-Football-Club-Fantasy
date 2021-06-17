@@ -96,9 +96,10 @@
 				text: "La Liga Race"
 			},
 			axisX: {
-				title: "Matchday"
+				title: "Matchday",
+				interval: 1,
 			},
-			axisY2: {
+			axisY: {
 				title: "Points",
 			},
 			legend: {
@@ -217,17 +218,17 @@
 					{ y: 0 },
 					{ y: 35}
 				]
-			}],
-			 options: {
-				scales: {
-				   x: [{
-					ticks: {
-					  beginAtZero: true,
-					  display: false 
-					}
-				      }]
-				}
-			    }
+			}]
+			// options: {
+			//	scales: {
+			//	   x: [{
+			//		ticks: {
+			//		  beginAtZero: true,
+			//		  display: false 
+			//		}
+			//	      }]
+			//	}
+			//    }
 		});
 		chart.render();
 			
