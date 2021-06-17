@@ -220,9 +220,11 @@
 			}],
 			 options: {
 				scales: {
-				    x: {
-					suggestedMin: 0,
-				    }
+				   xAxes: [{
+					ticks: {
+					  stepSize: 1
+					}
+				      }]
 				}
 			    }
 		});
