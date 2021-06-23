@@ -89,7 +89,7 @@
 		<script>
 		window.onload = function () {
 
-		var chart = new CanvasJS.Chart("MD2Liga", {
+		var chart2 = new CanvasJS.Chart("MD2Liga", {
 			animationEnabled: true,
 			theme: "light2",
 			title:{
@@ -241,7 +241,7 @@
 			//	}
 			//    }
 		});
-		chart.render(); 
+		chart2.render(); 
 			
 		function toogleDataSeries(e){
 			if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
@@ -249,7 +249,7 @@
 			} else{
 				e.dataSeries.visible = true;
 			}
-			chart.render();
+			chart2.render();
 		}	
 
 		}
