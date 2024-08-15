@@ -1,1 +1,3560 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!--meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable="no"-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+		
+		 <link rel = "icon" href =  
+"https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/022016/logo_cuervos.jpg?itok=GBm3IHyB" 
+        type = "image/x-icon"> 
+          
+		<style>
+			img.resize1 {
+  				<!--width: 800;-->
+  				<!--height: 400;-->
+				width: 100%;
+				height: 100%;
+  				margin-left: auto;
+  				margin-right: auto;
+			}
+			
+			img.resizephone {
+ 				 width: auto ;
+  				 max-width: 100% ;
+  				 height: auto ;
+			}
+		
+			table, td, th, tr {  
+  				border: 1px solid; 
+				text-align: center;
+			}
+			
+			th[colspan="2"] {
+    				text-align: center;
+				font-size: 1.15em;
+				padding-top: 12px;
+  				padding-bottom: 12px;
+
+			}
+			
+			table.tablec, td.tablec, th.tablec {  
+  				border: 1px solid; 
+				text-align: center;
+			}
+
+			table {
+ 			border-collapse: collapse;
+			}
+			
+			table.tablec {
+ 			border-collapse: collapse;
+			}
+			
+			table tbody tr:nth-child(2n + 1) {
+				background-color: rgba(160, 160, 160, 0.075);
+			} 
+			
+			
+			
+			* {
+			  box-sizing: border-box;
+			}
+
+			.column {
+				float: left;
+				width: 50%;
+				padding: 5px;
+			}
+
+			/* Clearfix (clear floats) */
+			.row::after {
+				content: "";
+				clear: both;
+				display: table;
+			}
+			
+			.center {
+ 				display: block;
+  				margin-left: auto;
+ 				margin-right: auto;
+  				<!--width: 75%;-->
+				width: auto;
+			}
+			
+			
+			
+		</style>
+		
+		<script>
+		window.onload = function () {
+
+		var chart2 = new CanvasJS.Chart("MD2Liga", {
+			animationEnabled: true,
+			theme: "light2",
+			title:{
+				text: "La Liga Race"
+			},
+			axisX: {
+				title: "Matchday",
+				interval: 1,
+			},
+			axisY: {
+				title: "Points",
+			},
+			legend: {
+				cursor: "pointer",
+				verticalAlign: "top",
+				horizontalAlign: "center",
+				dockInsidePlotArea: true,
+				itemclick: toogleDataSeries
+			},
+			data: [{        
+				type: "spline",
+				name: "Alfredo",
+				showInLegend: true,
+			indexLabelFontSize: 16,
+				dataPoints: [
+					{ y: 0},
+					{y: 62},
+					{y: 122},
+					{y: 181},
+					{y: 253},
+					{y: 320},
+					{y: 365},
+					{y: 422},
+					{y: 469},
+					{y: 518},
+					{y: 566},
+					{y: 619},
+					{y: 677},
+					{y: 728}
+					
+					
+				]
+		       },
+		       {        
+				type: "spline",
+				name: "Genaro",
+			        showInLegend: true,
+			indexLabelFontSize: 16,
+				dataPoints: [
+					{ y: 0},
+					{y: 85},
+					{y: 148},
+					{y: 221},
+					{y: 282},
+					{y: 339},
+					{y: 405},
+					{y: 455},
+					{y: 517},
+					{y: 564},
+					{y: 593},
+					{y: 636},
+					{y: 691},
+					{y: 736}
+				]
+		       },
+		        {        
+				type: "spline",
+				name: "Joao",
+			        showInLegend: true,
+			indexLabelFontSize: 16,
+				dataPoints: [
+					{ y: 0},
+					{y: 102},
+					{y: 169},
+					{y: 224},
+					{y: 280},
+					{y: 358},
+					{y: 403},
+					{y: 463},
+					{y: 540},
+					{y: 600},
+					{y: 663},
+					{y: 720},
+					{y: 792},
+					{y: 843}
+				]
+			},
+		        {        
+				type: "spline",
+				name: "Irving",
+			        showInLegend: true,
+			indexLabelFontSize: 16,
+				dataPoints: [
+					{ y: 0},
+					{y: 68},
+					{y: 122},
+					{y: 198},
+					{y: 261},
+					{y: 313},
+					{y: 361},
+					{y: 412},
+					{y: 489},
+					{y: 540},
+					{y: 578},
+					{y: 616},
+					{y: 678},
+					{y: 728}
+				]
+			},
+		        {        
+				type: "spline",
+				name: "Vincent",
+			        showInLegend: true,
+			indexLabelFontSize: 16,
+				dataPoints: [
+					{ y: 0},
+					{y: 66,
+					{y: 109},
+					{y: 174},
+					{y: 231},
+					{y: 296},
+					{y: 319},
+					{y: 380},
+					{y: 445},
+					{y: 510},
+					{y: 547},
+					{y: 605},
+					{y: 673},
+					{y: 715}
+				]
+			},
+		        ]
+			// options: {
+			//	scales: {
+			//	   x: [{
+			//		ticks: {
+			//		  beginAtZero: true,
+			//		  display: false 
+			//		}
+			//	      }]
+			//	}
+			//    }
+		});
+		chart2.render(); 
+			
+		function toogleDataSeries(e){
+			if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+				e.dataSeries.visible = false;
+			} else{
+				e.dataSeries.visible = true;
+			}
+			chart2.render();
+		}	
+
+		}
+		</script>
+		
+		
+	
+		<title>Cuervos Fantasy Club</title>
+		<meta charset="utf-8" />
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> -->
+		<link rel="stylesheet" href="assets/css/main.css" /> 
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Competitions</a></h1>
+						<nav class="links">
+							<ul>	
+								<li><a href="cl2324.html">CL 2023-2024</a></li>
+								<li><a href="cl2223.html">CL 2022-2023</a></li>
+								<li><a href="cl2122.html">CL 2021-2022</a></li>
+								<li><a href="ec2020.html">Euro Cup 2020</a></li>
+								<li><a href="cl2021.html">CL 2020-2021</a></li>
+								<li><a href="cl201920.html">CL 2019-2020</a></li>
+								<li><a href="cl201819.html">CL 2018-2019</a></li>
+								<li><a href="wc2018.html">World Cup 2018</a></li>
+								<li><a href="cl201718.html">CL 2017-2018</a></li>
+								<li><a href="cl201617.html">CL 2016-2017</a></li>
+								<li><a href="ec2016.html">Euro Cup 2016</a></li>
+								<li><a href="cl201516.html">CL 2015-2016</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="cl2324.html">
+											<h3>CL 2023-2024</h3>
+										</a>
+									</li>
+									<li>
+										<a href="cl2223.html">
+											<h3>CL 2022-2023</h3>
+										</a>
+									</li>
+									<li>
+										<a href="cl2122.html">
+											<h3>CL 2021-2022</h3>
+										</a>
+									</li>
+									<li>
+										<a href="ec2020.html">
+											<h3>Euro Cup 2020</h3>
+										</a>
+									</li>
+									<li>
+										<a href="cl2021.html">
+											<h3>CL 2020-2021</h3>
+										</a>
+									</li>
+									<li>
+										<a href="cl20192020.html">
+											<h3>CL 2019-2020</h3>
+										</a>
+									</li>
+									<li>
+										<a href="cl201819.html">
+											<h3>CL 2018-2019</h3>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>World Cup 2018</h3>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>CL 2017-2018</h3>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>CL 2016-2017</h3>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Euro Cup 2016</h3>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>CL 2015-2016</h3>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="#" class="button large fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+						<h1 style="text-align:center">Champions League 2023-2024</h1>
+
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2 style="text-align:center">2023-2024 Season Champions</h2>
+									</div>
+									
+									
+								</header>
+								<h3 style="text-align:center">Copa Cuervos, La Liga, and Pichichi Trophy (Most Matchdays Won)</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2223/joaochamp.png" alt=""/>
+								</div>
+								
+							</article>
+
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2>Matchday 13</h2>
+									</div>
+									<div class="meta">
+										<h3>  June 10th, 2024</h3>
+									</div>
+								</header>
+
+								<h3 style="text-align:center">Results</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/md132324.png" alt=""/>
+								</div>
+								<p> </p> <br>
+								<h3 style="text-align:center">Copa Cuervos Final Leg I</h3>
+								<table>
+										<tr>
+											<td><b> Joao (72+51 = 123) </b></td>
+											<td> Genaro (55 + 45 = 100) </td>
+										</tr>
+								</table>
+								<p> </p> 
+				
+								
+								
+								<p> </p>
+								
+								<h3 style="text-align:center">La Liga </h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/leaguemd122324.png" alt=""/>
+								</div>
+								
+							
+							
+								<div id="MD2Liga" style="height: 300px; width: 100%;"></div>
+								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+								</div>
+								
+							
+							
+								<p> </p>
+								<h3 style="text-align:center">Best Squad</h3>
+								<h4 style="text-align:center">Alfredo (65 points)</h4>
+								
+						
+
+								<p> </p>
+
+								<h3 style="text-align:center">Pichichi Trophy (Most Matchdays Won) </h3>
+ 								<table>
+  										<tr>
+  									    		<td>1</td>
+   									   		<td>Joao (6)</td>
+  									    		<td>MD1, MD2, MD5, L16II, QFII, SFI</td>
+										</tr>
+										<tr>
+  									    		<td>2</td>
+											<td>Vincent (3)</td>
+  									    		<td>L16I,QFI,SFI</td>
+										</tr>
+										<tr>
+  									    		<td>3</td>
+   									   		<td>Alfredo (2)</td>
+  									    		<td>MD4, Final</td>
+										</tr>
+										<tr>
+  									    		<td>4</td>
+   									   		<td>Genaro (2)</td>
+  									    		<td>MD3, MD6</td>
+										</tr>
+										
+										
+									
+								</table>
+								
+								
+								
+									<h3 style = "text-align:center">News and Observations</h3>
+									<ul>
+										<li><p> Joao wins the league and the cup. Congratulations</p>
+										<li><p> Joao has also officially won the Pichichi Trophy</p></li>
+										<li><p> Matchday 13 is on June 10th, you have five transfers. </p></li>
+										<li><p>#GenarofortheSacko2025</p></li>										
+									</ul>
+							</article>
+
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2>Matchday 12</h2>
+									</div>
+									<div class="meta">
+										<h3>  May 7th and May 8th, 2024</h3>
+									</div>
+								</header>
+
+								<h3 style="text-align:center">Results</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/md122324.png" alt=""/>
+								</div>
+								<p> </p> <br>
+								<h3 style="text-align:center">Copa Cuervos Final Leg I</h3>
+								<table>
+										<tr>
+											<td><b> Joao (72) </b></td>
+											<td> Genaro (55) </td>
+										</tr>
+								</table>
+								<p> </p> 
+				
+								
+								
+								<p> </p>
+								
+								<h3 style="text-align:center">La Liga </h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/leaguemd122324.png" alt=""/>
+								</div>
+								
+							
+							
+								<div id="MD2Liga" style="height: 300px; width: 100%;"></div>
+								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+								</div>
+								
+							
+							
+								<p> </p>
+								<h3 style="text-align:center">Best Squad</h3>
+								<h4 style="text-align:center">Joao (72 points)</h4>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/bestmd122324.png" alt=""/>
+								</div>
+						
+
+								<p> </p>
+
+								<h3 style="text-align:center">Pichichi Trophy (Most Matchdays Won) </h3>
+ 								<table>
+  										<tr>
+  									    		<td>1</td>
+   									   		<td>Joao (6)</td>
+  									    		<td>MD1, MD2, MD5, L16II, QFII, SFI</td>
+										</tr>
+										<tr>
+  									    		<td>2</td>
+											<td>Vincent (3)</td>
+  									    		<td>L16I,QFI,SFI</td>
+										</tr>
+										<tr>
+  									    		<td>3</td>
+   									   		<td>Genaro (2)</td>
+  									    		<td>MD3, MD6</td>
+										</tr>
+										<tr>
+  									    		<td>4</td>
+   									   		<td>Alfredo (1)</td>
+  									    		<td>MD4</td>
+										</tr>
+										
+									
+								</table>
+								
+								
+								
+									<h3 style = "text-align:center">News and Observations</h3>
+									<ul>
+										<li><p> Joao obtains a 17 point lead over Genaro in the first leg of the final.</p>
+										<li><p> Joao has also officially won the Pichichi Trophy</p></li>
+										<li><p> Matchday 13 is on June 10th, you have five transfers. </p></li>
+										<li><p> The following will face each other on Matchday 13</p>										
+										<table>
+											<tr>
+												<th colspan="2"> Matchday 13 </th>
+											</tr>
+											<tr>
+												<td>Joao</td>
+												<td>Genaro</td>
+											</tr>			
+										</table>
+										</li>
+										<li><p>#GenarofortheSacko2025</p></li>										
+									</ul>
+							</article>
+
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2>Matchday 11</h2>
+									</div>
+									<div class="meta">
+										<h3>  April 30th and May 1st, 2024</h3>
+									</div>
+								</header>
+
+								<h3 style="text-align:center">Results</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/md112324.png" alt=""/>
+								</div>
+								<p> </p> <br>
+								<h3 style="text-align:center">Copa Cuervos Semifinal</h3>
+								<table>
+										<tr>
+											<td><b> Genaro (50) </b></td>
+											<td> Irving (51) </td>
+										</tr>
+								</table>
+								<p> </p> 
+				
+								
+								
+								<p> </p>
+								
+								<h3 style="text-align:center">La Liga </h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/leaguemd112324.png" alt=""/>
+								</div>
+								
+							
+							
+								<div id="MD2Liga" style="height: 300px; width: 100%;"></div>
+								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+								</div>
+								
+							
+							
+								<p> </p>
+								<h3 style="text-align:center">Best Squad</h3>
+								<h4 style="text-align:center">Vincent (58 points)</h4>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/bestmd112324.png" alt=""/>
+								</div>
+						
+
+								<p> </p>
+
+								<h3 style="text-align:center">Pichichi Trophy (Most Matchdays Won) </h3>
+ 								<table>
+  										<tr>
+  									    		<td>1</td>
+   									   		<td>Joao (4)</td>
+  									    		<td>MD1, MD2, MD5, L16II, QFII</td>
+										</tr>
+										<tr>
+  									    		<td>2</td>
+											<td>Vincent (3)</td>
+  									    		<td>L16I,QFI,SFI</td>
+										</tr>
+										<tr>
+  									    		<td>3</td>
+   									   		<td>Genaro (2)</td>
+  									    		<td>MD3, MD6</td>
+										</tr>
+										<tr>
+  									    		<td>4</td>
+   									   		<td>Alfredo (1)</td>
+  									    		<td>MD4</td>
+										</tr>
+										
+									
+								</table>
+								
+								
+								
+									<h3 style = "text-align:center">News and Observations</h3>
+									<ul>
+										<li><p> Genaro clinches a spot in the final by just 1 point, eliminating Irving and facing Joao in the next round.</p>
+										<li><p> Matchday 12 is on May 7th, you have three transfers. </p></li>
+										<li><p> The following will face each other on Matchday 12</p>										
+										<table>
+											<tr>
+												<th colspan="2"> Matchday 12 </th>
+											</tr>
+											<tr>
+												<td>Joao</td>
+												<td>Genaro</td>
+											</tr>			
+										</table>
+										</li>
+										<li><p>#GenarofortheSacko2025</p></li>										
+									</ul>
+							</article>
+
+
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2>Matchday 10</h2>
+									</div>
+									<div class="meta">
+										<h3>  April 16th and April 17th, 2024</h3>
+									</div>
+								</header>
+
+								<h3 style="text-align:center">Results</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/md102324.png" alt=""/>
+								</div>
+								<p> </p> <br>
+								<h3 style="text-align:center">Copa Cuervos</h3>
+								<table>
+										<tr>
+											<td><b> Irving (38) </b></td>
+											<td> Vincent (37) </td>
+										</tr>
+										<tr>
+											<td><b> Joao (63) </b></td>
+											<td> Alfredo (48) </td>
+										</tr>
+										<tr>
+											<td> Genaro (29) </td>
+											<td>  BYE </td>
+										</tr>
+										
+								</table>
+								<p> </p> 
+								<h3 style="text-align:center">Copa Cuervos Faceoffs</h3>
+								<table>
+										<tr>
+											<td> </td>
+											<td> Alfredo </td>
+											<td> Genaro </td>
+											<td> Irving </td>
+											<td> Joao </td>
+											<td> Vincent </td>
+											<td> Alfredo (II)</td>
+											<td> Genaro (II)</td>
+											<td> Irving (II)</td>
+											<td> Joao (II)</td>
+											<td> Vincent (II)</td>
+										</tr>
+										<tr>
+											<td> Alfredo </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+										</tr>
+										<tr>
+											<td> Genaro </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+										</tr>
+										<tr>
+											<td> Irving </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											
+										</tr>
+										<tr>
+											<td> Joao </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+										</tr>
+										<tr>
+											<td> Vincent </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+										</tr>
+								</table>
+								<p> </p> 
+
+							
+								<h3 style="text-align:center">Copa Cuervos Standings</h3>
+ 								<table class="tablec">
+  										<tr>
+  									    		<td bgcolor="#A2FF33">1</td>
+   									   		<td>Joao</td>
+  									    		<td>7-1</td>											   
+										</tr>
+			
+  										<tr>
+  									    		<td bgcolor="#FFFC33">2</td>
+   									   		<td>Genaro</td>
+  											<td>5-2</td>
+ 									   	</tr>
+														
+  										<tr>
+  											<td bgcolor="#FFFC33">3</td>
+   									 		<td>Irving</td>
+  									    		<td>3-5</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">3</td>
+   									   		<td>Alfredo</td>
+  									    		<td>2-5</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">3</td>
+   									   		<td>Vincent</td>
+  									    		<td>2-5</td>
+ 									   	</tr>
+									
+  										
+
+								</table>
+								
+								
+								<p> </p>
+								
+								<h3 style="text-align:center">La Liga </h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/leaguemd102324.png" alt=""/>
+								</div>
+								
+							
+							
+								<div id="MD2Liga" style="height: 300px; width: 100%;"></div>
+								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+								</div>
+								
+							
+							
+								<p> </p>
+								<h3 style="text-align:center">Best Squad</h3>
+								<h4 style="text-align:center">Joao (63 points)</h4>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/bestmd102324.png" alt=""/>
+								</div>
+						
+
+								<p> </p>
+
+								<h3 style="text-align:center">Pichichi Trophy (Most Matchdays Won) </h3>
+ 								<table>
+  										<tr>
+  									    		<td>1</td>
+   									   		<td>Joao (4)</td>
+  									    		<td>MD1, MD2, MD5, L16II, QFII</td>
+										</tr>
+										<tr>
+  									    		<td>2</td>
+											<td>Vincent (2)</td>
+  									    		<td>L16I,QFI</td>
+										</tr>
+										<tr>
+  									    		<td>3</td>
+   									   		<td>Genaro (2)</td>
+  									    		<td>MD3, MD6</td>
+										</tr>
+										<tr>
+  									    		<td>4</td>
+   									   		<td>Alfredo (1)</td>
+  									    		<td>MD4</td>
+										</tr>
+										
+									
+								</table>
+								
+								
+								
+									<h3 style = "text-align:center">News and Observations</h3>
+									<ul>
+										<li><p> Irving barely made it through the semifinal by 1 point and will face Genaro in the playoffs.</p>
+										<li><p> Matchday 11 is on April 30th, you have three transfers. </p></li>
+										<li><p> The following will face each other on Matchday 11</p>										
+										<table>
+											<tr>
+												<th colspan="2"> Matchday 11 </th>
+											</tr>
+											<tr>
+												<td>Irving</td>
+												<td>Genaro</td>
+											</tr>			
+										</table>
+										</li>
+										<li><p>#GenarofortheSacko2025</p></li>										
+									</ul>
+							</article>
+
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2>Matchday 9</h2>
+									</div>
+									<div class="meta">
+										<h3>  April 9th and April 10th, 2024</h3>
+									</div>
+								</header>
+
+								<h3 style="text-align:center">Results</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/md92324.png" alt=""/>
+								</div>
+								<p> </p> <br>
+								<h3 style="text-align:center">Copa Cuervos</h3>
+								<table>
+										<tr>
+											<td><b> Vincent (65) </b></td>
+											<td> Alfredo (49) </td>
+										</tr>
+										<tr>
+											<td><b> Joao (60) </b></td>
+											<td> Genaro (47) </td>
+										</tr>
+										<tr>
+											<td> Irving (51) </td>
+											<td>  BYE </td>
+										</tr>
+										
+								</table>
+								<p> </p> 
+								<h3 style="text-align:center">Copa Cuervos Faceoffs</h3>
+								<table>
+										<tr>
+											<td> </td>
+											<td> Alfredo </td>
+											<td> Genaro </td>
+											<td> Irving </td>
+											<td> Joao </td>
+											<td> Vincent </td>
+											<td> Alfredo (II)</td>
+											<td> Genaro (II)</td>
+											<td> Irving (II)</td>
+											<td> Joao (II)</td>
+											<td> Vincent (II)</td>
+										</tr>
+										<tr>
+											<td> Alfredo </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td bgcolor="#EA7E66">L</td>
+										</tr>
+										<tr>
+											<td> Genaro </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+										</tr>
+										<tr>
+											<td> Irving </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											
+										</tr>
+										<tr>
+											<td> Joao </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+										</tr>
+										<tr>
+											<td> Vincent </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+										</tr>
+								</table>
+								<p> </p> 
+
+							
+								<h3 style="text-align:center">Copa Cuervos Standings</h3>
+ 								<table class="tablec">
+  										<tr>
+  									    		<td bgcolor="#A2FF33">1</td>
+   									   		<td>Joao</td>
+  									    		<td>6-1</td>											   
+										</tr>
+			
+  										<tr>
+  									    		<td bgcolor="#FFFC33">2</td>
+   									   		<td>Genaro</td>
+  											<td>5-2</td>
+ 									   	</tr>
+														
+  										<tr>
+  											<td bgcolor="#FFFC33">3</td>
+   									 		<td>Vincent</td>
+  									    		<td>2-5</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">3</td>
+   									   		<td>Irving</td>
+  									    		<td>2-5</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">3</td>
+   									   		<td>Alfredo</td>
+  									    		<td>2-5</td>
+ 									   	</tr>
+									
+  										
+
+								</table>
+								
+								
+								<p> </p>
+								
+								<h3 style="text-align:center">La Liga </h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/leaguemd92324.png" alt=""/>
+								</div>
+								
+							
+							
+								<div id="MD2Liga" style="height: 300px; width: 100%;"></div>
+								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+								</div>
+								
+							
+							
+								<p> </p>
+								<h3 style="text-align:center">Best Squad</h3>
+								<h4 style="text-align:center">Vincent (65 points)</h4>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/bestmd92324.png" alt=""/>
+								</div>
+						
+
+								<p> </p>
+
+								<h3 style="text-align:center">Pichichi Trophy (Most Matchdays Won) </h3>
+ 								<table>
+  										<tr>
+  									    		<td>1</td>
+   									   		<td>Joao (3)</td>
+  									    		<td>MD1, MD2, MD5, L16II</td>
+										</tr>
+										<tr>
+  									    		<td>2</td>
+											<td>Vincent (2)</td>
+  									    		<td>L16I,QFI</td>
+										</tr>
+										<tr>
+  									    		<td>3</td>
+   									   		<td>Genaro (2)</td>
+  									    		<td>MD3, MD6</td>
+										</tr>
+										<tr>
+  									    		<td>4</td>
+   									   		<td>Alfredo (1)</td>
+  									    		<td>MD4</td>
+										</tr>
+										
+									
+								</table>
+								
+								
+								
+									<h3 style = "text-align:center">News and Observations</h3>
+									<ul>
+										<li><p> Joao widened the lead in La Liga, with Irving looming not far behind Genaro.</p></li>
+										<li><p> After beating Genaro, Joao progresses directly to the final. Genaro will be expecting a semifinal contender.</p></li>
+										<li><p> After Vincent's dominating victory over Alfredo, he is now one win away from reaching the playoffs.</p></li>
+										<li><p> Irving or Vincent need a win to pass automatically (since the Alfredo-Vincent rounds are reduced to a 1 point difference). Alfredo needs a win and a draw from Irving-Vincent.</p></li>
+										<li><p> Matchday 10 is on April 16th, you have five transfers. </p></li>
+										<li><p> The following will face each other on Matchday 9</p>										
+										<table>
+											<tr>
+												<th colspan="2"> Matchday 8 </th>
+											</tr>
+											<tr>
+												<td>Irving</td>
+												<td>Vincent</td>
+											</tr>
+											<tr>
+												<td>Joao</td>
+												<td>Alfredo</td>
+											</tr>
+										
+											<tr>
+												<td>Genaro</td>
+												<td>Bye</td>
+											</tr>
+										
+										</table>
+										</li>
+										<li><p>#GenarofortheSacko2025</p></li>										
+									</ul>
+							</article>
+
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2>Matchday 8</h2>
+									</div>
+									<div class="meta">
+										<h3>  March 5th - March 13th, 2024</h3>
+									</div>
+								</header>
+
+								<h3 style="text-align:center">Results</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/md82324.png" alt=""/>
+								</div>
+								<p> </p> <br>
+								<h3 style="text-align:center">Copa Cuervos</h3>
+								<table>
+										<tr>
+											<td><b> Irving (77) </b></td>
+											<td> Alfredo (47) </td>
+										</tr>
+										<tr>
+											<td><b> Genaro (70) </b></td>
+											<td> Vincent (65) </td>
+										</tr>
+										<tr>
+											<td> Joao (77) </td>
+											<td>  BYE </td>
+										</tr>
+										
+								</table>
+								<p> </p> 
+								<h3 style="text-align:center">Copa Cuervos Faceoffs</h3>
+								<table>
+										<tr>
+											<td> </td>
+											<td> Alfredo </td>
+											<td> Genaro </td>
+											<td> Irving </td>
+											<td> Joao </td>
+											<td> Vincent </td>
+											<td> Alfredo (II)</td>
+											<td> Genaro (II)</td>
+											<td> Irving (II)</td>
+											<td> Joao (II)</td>
+											<td> Vincent (II)</td>
+										</tr>
+										<tr>
+											<td> Alfredo </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Genaro </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td bgcolor="#A2FF33">W</td>
+										</tr>
+										<tr>
+											<td> Irving </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											
+										</tr>
+										<tr>
+											<td> Joao </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+										</tr>
+										<tr>
+											<td> Vincent </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+										</tr>
+								</table>
+								<p> </p> 
+
+							
+								<h3 style="text-align:center">Copa Cuervos Standings</h3>
+ 								<table class="tablec">
+  										<tr>
+  									    		<td bgcolor="#A2FF33">1</td>
+   									   		<td>Genaro</td>
+  									    		<td>6-1</td>											   
+										</tr>
+			
+  										<tr>
+  									    		<td bgcolor="#FFFC33">2</td>
+   									   		<td>Joao</td>
+  											<td>5-1</td>
+ 									   	</tr>
+														
+  										<tr>
+  											<td bgcolor="#FFFC33">3</td>
+   									 		<td>Irving</td>
+  									    		<td>2-4</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">3</td>
+   									   		<td>Alfredo</td>
+  									    		<td>2-4</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">3</td>
+   									   		<td>Vincent</td>
+  									    		<td>1-5</td>
+ 									   	</tr>
+									
+  										
+
+								</table>
+								
+								
+								<p> </p>
+								
+								<h3 style="text-align:center">La Liga </h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/leaguemd82324.png" alt=""/>
+								</div>
+								
+							
+							
+								<div id="MD2Liga" style="height: 300px; width: 100%;"></div>
+								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+								</div>
+								
+							
+							
+								<p> </p>
+								<h3 style="text-align:center">Best Squad</h3>
+								<h4 style="text-align:center">Joao (77 points)</h4>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/bestmd82324.png" alt=""/>
+								</div>
+						
+
+								<p> </p>
+
+								<h3 style="text-align:center">Pichichi Trophy (Most Matchdays Won) </h3>
+ 								<table>
+  										<tr>
+  									    		<td>1</td>
+   									   		<td>Joao (3)</td>
+  									    		<td>MD1, MD2, MD5, L16II</td>
+										</tr>
+										<tr>
+  									    		<td>2</td>
+   									   		<td>Genaro (2)</td>
+  									    		<td>MD3, MD6</td>
+										</tr>
+										<tr>
+  									    		<td>4</td>
+   									   		<td>Vincent (1)</td>
+  									    		<td>L16I</td>
+										</tr>
+										<tr>
+  									    		<td>4</td>
+   									   		<td>Alfredo (1)</td>
+  									    		<td>MD4</td>
+										</tr>
+										
+									
+								</table>
+								
+								
+								
+									<h3 style = "text-align:center">News and Observations</h3>
+									<ul>
+										<li><p> Joao has kept the lead in La Liga.</p></li>
+										<li><p> Genaro and Joao have qualified for the cup. But who will progress directly to the final?</p></li>
+										<li><p> The cup playoff is very much alive for Alfredo, Vincent, and Irving. </p></li>
+										<li><p> Matchday 9 is on April 9th, you have five transfers. </p></li>
+										<li><p> The following will face each other on Matchday 9</p>										
+										<table>
+											<tr>
+												<th colspan="2"> Matchday 8 </th>
+											</tr>
+											<tr>
+												<td>Alfredo</td>
+												<td>Vincent</td>
+											</tr>
+											<tr>
+												<td>Joao</td>
+												<td>Genaro</td>
+											</tr>
+										
+											<tr>
+												<td>Irving</td>
+												<td>Bye</td>
+											</tr>
+										
+										</table>
+										</li>
+										<li><p>#GenarofortheSacko2025</p></li>										
+									</ul>
+							</article>
+
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2>Matchday 7</h2>
+									</div>
+									<div class="meta">
+										<h3>  February 13th - February 21st, 2024</h3>
+									</div>
+								</header>
+
+								<h3 style="text-align:center">Results</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/md72324.png" alt=""/>
+								</div>
+								<p> </p> <br>
+								<h3 style="text-align:center">Copa Cuervos</h3>
+								<table>
+										<tr>
+											<td><b> Joao (60) </b></td>
+											<td> Irving (51) </td>
+										</tr>
+										<tr>
+											<td><b> Alfredo (57) </b></td>
+											<td> Genaro (50) </td>
+										</tr>
+										<tr>
+											<td> Vincent (61) </td>
+											<td>  BYE </td>
+										</tr>
+										
+								</table>
+								<p> </p> 
+								<h3 style="text-align:center">Copa Cuervos Faceoffs</h3>
+								<table>
+										<tr>
+											<td> </td>
+											<td> Alfredo </td>
+											<td> Genaro </td>
+											<td> Irving </td>
+											<td> Joao </td>
+											<td> Vincent </td>
+											<td> Alfredo (II)</td>
+											<td> Genaro (II)</td>
+											<td> Irving (II)</td>
+											<td> Joao (II)</td>
+											<td> Vincent (II)</td>
+										</tr>
+										<tr>
+											<td> Alfredo </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Genaro </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Irving </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											
+										</tr>
+										<tr>
+											<td> Joao </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+										</tr>
+										<tr>
+											<td> Vincent </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+										</tr>
+								</table>
+								<p> </p> 
+
+							
+								<h3 style="text-align:center">Copa Cuervos Standings</h3>
+ 								<table class="tablec">
+  										<tr>
+  									    		<td bgcolor="#A2FF33">1</td>
+   									   		<td>Genaro</td>
+  									    		<td>5-1</td>											   
+										</tr>
+			
+  										<tr>
+  									    		<td bgcolor="#FFFC33">2</td>
+   									   		<td>Joao</td>
+  											<td>5-1</td>
+ 									   	</tr>
+														
+  										<tr>
+  											<td bgcolor="#FFFC33">3</td>
+   									 		<td>Alfredo</td>
+  									    		<td>2-3</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">3</td>
+   									   		<td>Vincent</td>
+  									    		<td>1-4</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">3</td>
+   									   		<td>Irving</td>
+  									    		<td>1-5</td>
+ 									   	</tr>
+									
+  										
+
+								</table>
+								
+								
+								<p> </p>
+								
+								<h3 style="text-align:center">La Liga </h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/leaguemd72324.png" alt=""/>
+								</div>
+								
+							
+							
+								<div id="MD2Liga" style="height: 300px; width: 100%;"></div>
+								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+								</div>
+								
+							
+							
+								<p> </p>
+								<h3 style="text-align:center">Best Squad</h3>
+								<h4 style="text-align:center">Vincent (61 points)</h4>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/bestmd72324.png" alt=""/>
+								</div>
+						
+
+								<p> </p>
+
+								<h3 style="text-align:center">Pichichi Trophy (Most Matchdays Won) </h3>
+ 								<table>
+  										<tr>
+  									    		<td>1</td>
+   									   		<td>Joao (3)</td>
+  									    		<td>MD1, MD2, MD5</td>
+										</tr>
+										<tr>
+  									    		<td>2</td>
+   									   		<td>Genaro (2)</td>
+  									    		<td>MD3, MD6</td>
+										</tr>
+										<tr>
+  									    		<td>4</td>
+   									   		<td>Vincent (1)</td>
+  									    		<td>L16I</td>
+										</tr>
+										<tr>
+  									    		<td>4</td>
+   									   		<td>Alfredo (1)</td>
+  									    		<td>MD4</td>
+										</tr>
+										
+									
+								</table>
+								
+								
+								
+									<h3 style = "text-align:center">News and Observations</h3>
+									<ul>
+										<li><p> Joao has retaken command of the table.</p></li>
+										<li><p> Genaro is finally handed a defeat by Alfredo in the cup. </p></li>
+										<li><p> Matchday 8 is on March 5th, you have three transfers. </p></li>
+										<li><p> The following will face each other on Matchday 8</p>										
+										<table>
+											<tr>
+												<th colspan="2"> Matchday 8 </th>
+											</tr>
+											<tr>
+												<td>Alfredo</td>
+												<td>Irving</td>
+											</tr>
+											<tr>
+												<td>Vincent</td>
+												<td>Genaro</td>
+											</tr>
+										
+											<tr>
+												<td>Joao</td>
+												<td>Bye</td>
+											</tr>
+										
+										</table>
+										</li>
+										<li><p>#GenarofortheSacko2025</p></li>										
+									</ul>
+							</article>
+
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2>Matchday 6</h2>
+									</div>
+									<div class="meta">
+										<h3>  December 12th and 13th, 2023</h3>
+									</div>
+								</header>
+
+								<h3 style="text-align:center">Results</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/md62324.png" alt=""/>
+								</div>
+								<p> </p> <br>
+								<h3 style="text-align:center">Copa Cuervos</h3>
+								<table>
+										<tr>
+											<td><b> Joao (45) </b></td>
+											<td> Vincent (23) </td>
+										</tr>
+										<tr>
+											<td><b> Genaro (66) </b></td>
+											<td> Irving (48) </td>
+										</tr>
+										<tr>
+											<td> Alfredo (45) </td>
+											<td>  BYE </td>
+										</tr>
+										
+								</table>
+								<p> </p> 
+								<h3 style="text-align:center">Copa Cuervos Faceoffs</h3>
+								<table>
+										<tr>
+											<td> </td>
+											<td> Alfredo </td>
+											<td> Genaro </td>
+											<td> Irving </td>
+											<td> Joao </td>
+											<td> Vincent </td>
+											<td> Alfredo (II)</td>
+											<td> Genaro (II)</td>
+											<td> Irving (II)</td>
+											<td> Joao (II)</td>
+											<td> Vincent (II)</td>
+										</tr>
+										<tr>
+											<td> Alfredo </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Genaro </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Irving </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											
+										</tr>
+										<tr>
+											<td> Joao </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+										</tr>
+										<tr>
+											<td> Vincent </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+										</tr>
+								</table>
+								<p> </p> 
+
+							
+								<h3 style="text-align:center">Copa Cuervos Standings</h3>
+ 								<table class="tablec">
+  										<tr>
+  									    		<td bgcolor="#A2FF33">1</td>
+   									   		<td>Genaro</td>
+  									    		<td>5-0</td>											   
+										</tr>
+			
+  										<tr>
+  									    		<td bgcolor="#FFFC33">2</td>
+   									   		<td>Joao</td>
+  											<td>4-1</td>
+ 									   	</tr>
+														
+  										<tr>
+  											<td bgcolor="#FFFC33">3</td>
+   									 		<td>Alfredo</td>
+  									    		<td>1-3</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">3</td>
+   									   		<td>Vincent</td>
+  									    		<td>1-4</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">3</td>
+   									   		<td>Irving</td>
+  									    		<td>1-4</td>
+ 									   	</tr>
+									
+  										
+
+								</table>
+								
+								
+								<p> </p>
+								
+								<h3 style="text-align:center">La Liga </h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/leaguemd62324.png" alt=""/>
+								</div>
+								
+							
+							
+								<div id="MD2Liga" style="height: 300px; width: 100%;"></div>
+								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+								</div>
+								
+							
+							
+								<p> </p>
+								<h3 style="text-align:center">Best Squad</h3>
+								<h4 style="text-align:center">Genaro (66 points)</h4>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/bestmd62324.png" alt=""/>
+								</div>
+						
+
+								<p> </p>
+
+								<h3 style="text-align:center">Pichichi Trophy (Most Matchdays Won) </h3>
+ 								<table>
+  										<tr>
+  									    		<td>1</td>
+   									   		<td>Joao (3)</td>
+  									    		<td>MD1, MD2, MD5</td>
+										</tr>
+										<tr>
+  									    		<td>2</td>
+   									   		<td>Genaro (2)</td>
+  									    		<td>MD3, MD6</td>
+										</tr>
+										<tr>
+  									    		<td>3</td>
+   									   		<td>Alfredo (1)</td>
+  									    		<td>MD4</td>
+										</tr>
+										
+									
+								</table>
+								
+								
+								
+									<h3 style = "text-align:center">News and Observations</h3>
+									<ul>
+										<li><p> Genaro has risen to the top once more, edging Joao by 2 points.</p></li>
+										<li><p> Genaro also maintains a lossless streak in the cup. Will someone defeat him?</p></li>
+										<li><p> Matchday 7 is on February 13th, you have unlimited transfers. </p></li>
+										<li><p> The following will face each other on Matchday 7</p>										
+										<table>
+											<tr>
+												<th colspan="2"> Matchday 7 </th>
+											</tr>
+											<tr>
+												<td>Joao</td>
+												<td>Irving</td>
+											</tr>
+											<tr>
+												<td>Alfredo</td>
+												<td>Genaro</td>
+											</tr>
+										
+											<tr>
+												<td>Vincent</td>
+												<td>Bye</td>
+											</tr>
+										
+										</table>
+										</li>
+										<li><p>#GenarofortheSacko2025</p></li>										
+									</ul>
+							</article>
+
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2>Matchday 5</h2>
+									</div>
+									<div class="meta">
+										<h3>  November 28th and 29th, 2023</h3>
+									</div>
+								</header>
+
+								<h3 style="text-align:center">Results</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/md52324.png" alt=""/>
+								</div>
+								<p> </p> <br>
+								<h3 style="text-align:center">Copa Cuervos</h3>
+								<table>
+										<tr>
+											<td><b> Joao (78) </b></td>
+											<td> Alfredo (67) </td>
+										</tr>
+										<tr>
+											<td><b> Vincent (65) </b></td>
+											<td> Irving (52) </td>
+										</tr>
+										<tr>
+											<td> Genaro (61) </td>
+											<td>  BYE </td>
+										</tr>
+										
+								</table>
+								<p> </p> 
+								<h3 style="text-align:center">Copa Cuervos Faceoffs</h3>
+								<table>
+										<tr>
+											<td> </td>
+											<td> Alfredo </td>
+											<td> Genaro </td>
+											<td> Irving </td>
+											<td> Joao </td>
+											<td> Vincent </td>
+											<td> Alfredo (II)</td>
+											<td> Genaro (II)</td>
+											<td> Irving (II)</td>
+											<td> Joao (II)</td>
+											<td> Vincent (II)</td>
+										</tr>
+										<tr>
+											<td> Alfredo </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Genaro </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Irving </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											
+										</tr>
+										<tr>
+											<td> Joao </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Vincent </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+										</tr>
+								</table>
+								<p> </p> 
+
+							
+								<h3 style="text-align:center">Copa Cuervos Standings</h3>
+ 								<table class="tablec">
+  										<tr>
+  									    		<td bgcolor="#A2FF33">1</td>
+   									   		<td>Genaro</td>
+  									    		<td>4-0</td>											   
+										</tr>
+			
+  										<tr>
+  									    		<td bgcolor="#FFFC33">2</td>
+   									   		<td>Joao</td>
+  											<td>3-1</td>
+ 									   	</tr>
+														
+  										<tr>
+  											<td bgcolor="#FFFC33">3</td>
+   									 		<td>Irving</td>
+  									    		<td>1-3</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">3</td>
+   									   		<td>Alfredo</td>
+  									    		<td>1-3</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">3</td>
+   									   		<td>Vincent</td>
+  									    		<td>1-3</td>
+ 									   	</tr>
+									
+  										
+
+								</table>
+								
+								
+								<p> </p>
+								
+								<h3 style="text-align:center">La Liga </h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/leaguemd52324.png" alt=""/>
+								</div>
+								
+							
+							
+								<div id="MD2Liga" style="height: 300px; width: 100%;"></div>
+								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+								</div>
+								
+							
+							
+								<p> </p>
+								<h3 style="text-align:center">Best Squad</h3>
+								<h4 style="text-align:center">Joao (78 points)</h4>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/bestmd52324.png" alt=""/>
+								</div>
+						
+
+								<p> </p>
+
+								<h3 style="text-align:center">Pichichi Trophy (Most Matchdays Won) </h3>
+ 								<table>
+  										<tr>
+  									    		<td>1</td>
+   									   		<td>Joao (3)</td>
+  									    		<td>MD1, MD2, MD5</td>
+										</tr>
+										<tr>
+  									    		<td>2</td>
+   									   		<td>Alfredo (1)</td>
+  									    		<td>MD4</td>
+										</tr>
+										<tr>
+  									    		<td>3</td>
+   									   		<td>Genaro (1)</td>
+  									    		<td>MD3</td>
+										</tr>
+									
+								</table>
+								
+								
+								
+									<h3 style = "text-align:center">News and Observations</h3>
+									<ul>
+										<li><p> Joao puts up a victorious performance that puts him atop La Liga.</p></li>
+										<li><p> Vincent ends his winless streak to keep contention for the cup.</p></li>
+										<li><p> The first half of the cup group stage is over. Let's see if the results prevail in the second half.</p></li>
+										<li><p> Matchday 6 is on December 12th, you have two transfers. </p></li>
+										<li><p> The following will face each other on Matchday 6</p>										
+										<table>
+											<tr>
+												<th colspan="2"> Matchday 5 </th>
+											</tr>
+											<tr>
+												<td>Genaro</td>
+												<td>Irving</td>
+											</tr>
+											<tr>
+												<td>Joao</td>
+												<td>Vincent</td>
+											</tr>
+										
+											<tr>
+												<td>Alfredo</td>
+												<td>Bye</td>
+											</tr>
+										
+										</table>
+										</li>
+										<li><p>#GenarofortheSacko2024</p></li>										
+									</ul>
+							</article>
+
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2>Matchday 4</h2>
+									</div>
+									<div class="meta">
+										<h3>  November 7th and 8th, 2023</h3>
+									</div>
+								</header>
+
+								<h3 style="text-align:center">Results</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/md42324.png" alt=""/>
+								</div>
+								<p> </p> <br>
+								<h3 style="text-align:center">Copa Cuervos</h3>
+								<table>
+										<tr>
+											<td><b> Alfredo (72) </b></td>
+											<td> Vincent (57) </td>
+										</tr>
+										<tr>
+											<td><b> Genaro (61) </b></td>
+											<td> Joao (56) </td>
+										</tr>
+										<tr>
+											<td> Irving (63) </td>
+											<td>  BYE </td>
+										</tr>
+										
+								</table>
+								<p> </p> 
+								<h3 style="text-align:center">Copa Cuervos Faceoffs</h3>
+								<table>
+										<tr>
+											<td> </td>
+											<td> Alfredo </td>
+											<td> Genaro </td>
+											<td> Irving </td>
+											<td> Joao </td>
+											<td> Vincent </td>
+											<td> Alfredo (II)</td>
+											<td> Genaro (II)</td>
+											<td> Irving (II)</td>
+											<td> Joao (II)</td>
+											<td> Vincent (II)</td>
+										</tr>
+										<tr>
+											<td> Alfredo </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Genaro </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Irving </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											
+										</tr>
+										<tr>
+											<td> Joao </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Vincent </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+										</tr>
+								</table>
+								<p> </p> 
+
+							
+								<h3 style="text-align:center">Copa Cuervos Standings</h3>
+ 								<table class="tablec">
+  										<tr>
+  									    		<td bgcolor="#A2FF33">1</td>
+   									   		<td>Genaro</td>
+  									    		<td>4-0</td>											   
+										</tr>
+			
+  										<tr>
+  									    		<td bgcolor="#FFFC33">2</td>
+   									   		<td>Joao</td>
+  											<td>2-1</td>
+ 									   	</tr>
+														
+  										<tr>
+  											<td bgcolor="#FFFC33">3</td>
+   									 		<td>Irving</td>
+  									    		<td>1-2</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">4</td>
+   									   		<td>Alfredo</td>
+  									    		<td>1-2</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">5</td>
+   									   		<td>Vincent</td>
+  									    		<td>0-3</td>
+ 									   	</tr>
+									
+  										
+
+								</table>
+								
+								
+								<p> </p>
+								
+								<h3 style="text-align:center">La Liga </h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/leaguemd42324.png" alt=""/>
+								</div>
+								
+							
+							
+								<div id="MD2Liga" style="height: 300px; width: 100%;"></div>
+								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+								</div>
+								
+							
+							
+								<p> </p>
+								<h3 style="text-align:center">Best Squad</h3>
+								<h4 style="text-align:center">Alfredo (72 points)</h4>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/bestmd32324.png" alt=""/>
+								</div>
+						
+
+								<p> </p>
+
+								<h3 style="text-align:center">Pichichi Trophy (Most Matchdays Won) </h3>
+ 								<table>
+  										<tr>
+  									    		<td>1</td>
+   									   		<td>Joao (2)</td>
+  									    		<td>MD1, MD2</td>
+										</tr>
+										<tr>
+  									    		<td>2</td>
+   									   		<td>Alfredo (1)</td>
+  									    		<td>MD4</td>
+										</tr>
+										<tr>
+  									    		<td>3</td>
+   									   		<td>Genaro (1)</td>
+  									    		<td>MD3</td>
+										</tr>
+									
+								</table>
+								
+								
+								
+									<h3 style = "text-align:center">News and Observations</h3>
+									<ul>
+										<li><p> Genaro finally overtakes Joao as leader of La Liga. </p></li>
+										<li><p> To make matters more bitter for Joao, Genaro also ended his winning streak in the Cup. </p></li>
+										<li><p> Not only did Alfredo earn his first win of the season, but he also managed to get the highest score of the matchday.</p></li>
+										<li><p> Genaro has won against all of his opponents in his first set of matches and now enters a bye week comfortably.</p></li>
+										<li><p> Matchday 5 is on November 28th, you have two transfers. </p></li>
+										<li><p> The following will face each other on Matchday 5</p>										
+										<table>
+											<tr>
+												<th colspan="2"> Matchday 5 </th>
+											</tr>
+											<tr>
+												<td>Joao</td>
+												<td>Alfredo</td>
+											</tr>
+											<tr>
+												<td>Irving</td>
+												<td>Vincent</td>
+											</tr>
+										
+											<tr>
+												<td>Genaro</td>
+												<td>Bye</td>
+											</tr>
+										
+										</table>
+										</li>
+										<li><p>#GenarofortheSacko2024</p></li>										
+									</ul>
+							</article>
+
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2>Matchday 3</h2>
+									</div>
+									<div class="meta">
+										<h3>  October 24th and 25th, 2023</h3>
+									</div>
+								</header>
+
+								<h3 style="text-align:center">Results</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/md32324.png" alt=""/>
+								</div>
+								<p> </p> <br>
+								<h3 style="text-align:center">Copa Cuervos</h3>
+								<table>
+										<tr>
+											<td><b> Irving (70) </b></td>
+											<td> Alfredo (59) </td>
+										</tr>
+										<tr>
+											<td><b> Genaro (75) </b></td>
+											<td> Vincent (65) </td>
+										</tr>
+										<tr>
+											<td> Joao (55) </td>
+											<td>  BYE </td>
+										</tr>
+										
+								</table>
+								<p> </p> 
+								<h3 style="text-align:center">Copa Cuervos Faceoffs</h3>
+								<table>
+										<tr>
+											<td> </td>
+											<td> Alfredo </td>
+											<td> Genaro </td>
+											<td> Irving </td>
+											<td> Joao </td>
+											<td> Vincent </td>
+											<td> Alfredo (II)</td>
+											<td> Genaro (II)</td>
+											<td> Irving (II)</td>
+											<td> Joao (II)</td>
+											<td> Vincent (II)</td>
+										</tr>
+										<tr>
+											<td> Alfredo </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Genaro </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Irving </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											
+										</tr>
+										<tr>
+											<td> Joao </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Vincent </td>
+											<td> </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+										</tr>
+								</table>
+								<p> </p> 
+
+							
+								<h3 style="text-align:center">Copa Cuervos Standings</h3>
+ 								<table class="tablec">
+  										<tr>
+  									    		<td bgcolor="#A2FF33">1</td>
+   									   		<td>Genaro</td>
+  									    		<td>3-0</td>											   
+										</tr>
+			
+  										<tr>
+  									    		<td bgcolor="#FFFC33">2</td>
+   									   		<td>Joao</td>
+  											<td>2-0</td>
+ 									   	</tr>
+														
+  										<tr>
+  											<td bgcolor="#FFFC33">3</td>
+   									 		<td>Irving</td>
+  									    		<td>1-2</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">4</td>
+   									   		<td>Vincent</td>
+  									    		<td>0-2</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">5</td>
+   									   		<td>Alfredo</td>
+  									    		<td>0-2</td>
+ 									   	</tr>
+									
+  										
+
+								</table>
+								
+								
+								<p> </p>
+								
+								<h3 style="text-align:center">La Liga </h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/leaguemd32324.png" alt=""/>
+								</div>
+								
+							
+							
+								<div id="MD2Liga" style="height: 300px; width: 100%;"></div>
+								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+								</div>
+								
+							
+							
+								<p> </p>
+								<h3 style="text-align:center">Best Squad</h3>
+								<h4 style="text-align:center">Genaro (75 points)</h4>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/bestmd32324.png" alt=""/>
+								</div>
+						
+
+								<p> </p>
+
+								<h3 style="text-align:center">Pichichi Trophy (Most Matchdays Won) </h3>
+ 								<table>
+  										<tr>
+  									    		<td>1</td>
+   									   		<td>Joao (2)</td>
+  									    		<td>MD1, MD2</td>
+										</tr>
+										<tr>
+  									    		<td>2</td>
+   									   		<td>Genaro (1)</td>
+  									    		<td>MD3</td>
+										</tr>
+									
+								</table>
+								
+								
+								
+									<h3 style = "text-align:center">News and Observations</h3>
+									<ul>
+										<li><p>Genaro finds himself victorious for a third time and is now only 3 points behind Liga highest scorer, Joao.</p></li>
+										<li><p>Genaro and Joao will face each other next week in a battle of giants, only one of them will keep their winning record.</p></li>
+										<li><p> Irving finally manages to end his winless streak, while Joao lucked out on his bye week after having the lowest amount of points.</p></li>
+										<li><p> Alfredo and Vincent are behind in the cup, but there are still plenty of matches to recover.</p></li>
+										<li><p> Matchday 4 is on November 7th, you have two transfers. </p></li>
+										<li><p> The following will face each other on Matchday 4</p>										
+										<table>
+											<tr>
+												<th colspan="2"> Matchday 3 </th>
+											</tr>
+											<tr>
+												<td>Joao</td>
+												<td>Genaro</td>
+											</tr>
+											<tr>
+												<td>Alfredo</td>
+												<td>Vincent</td>
+											</tr>
+										
+											<tr>
+												<td>Irving</td>
+												<td>Bye</td>
+											</tr>
+										
+										</table>
+										</li>
+										<li><p>#GenarofortheSacko2024</p></li>										
+									</ul>
+							</article>
+
+
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2>Matchday 2</h2>
+									</div>
+									<div class="meta">
+										<h3>  October 3rd and 4th, 2023</h3>
+									</div>
+								</header>
+
+								<h3 style="text-align:center">Results</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/md22324.png" alt=""/>
+								</div>
+								<p> </p> <br>
+								<h3 style="text-align:center">Copa Cuervos</h3>
+								<table>
+										<tr>
+											<td><b> Joao (67) </b></td>
+											<td> Irving (64) </td>
+										</tr>
+										<tr>
+											<td><b> Genaro (63) </b></td>
+											<td> Alfredo (60) </td>
+										</tr>
+										<tr>
+											<td> Vincent (47) </td>
+											<td>  BYE </td>
+										</tr>
+										
+								</table>
+								<p> </p> 
+								<h3 style="text-align:center">Copa Cuervos Faceoffs</h3>
+								<table>
+										<tr>
+											<td> </td>
+											<td> Alfredo </td>
+											<td> Genaro </td>
+											<td> Irving </td>
+											<td> Joao </td>
+											<td> Vincent </td>
+											<td> Alfredo (II)</td>
+											<td> Genaro (II)</td>
+											<td> Irving (II)</td>
+											<td> Joao (II)</td>
+											<td> Vincent (II)</td>
+										</tr>
+										<tr>
+											<td> Alfredo </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Genaro </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Irving </td>
+											<td> </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											
+										</tr>
+										<tr>
+											<td> Joao </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#A2FF33">W</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Vincent </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+										</tr>
+								</table>
+								<p> </p> 
+
+							
+								<h3 style="text-align:center">Copa Cuervos Standings</h3>
+ 								<table class="tablec">
+  										<tr>
+  									    		<td bgcolor="#A2FF33">1</td>
+   									   		<td>Joao</td>
+  									    		<td>2-0</td>											   
+										</tr>
+			
+  										<tr>
+  									    		<td bgcolor="#FFFC33">2</td>
+   									   		<td>Genaro</td>
+  											<td>2-0</td>
+ 									   	</tr>
+														
+  										<tr>
+  											<td bgcolor="#FFFC33">3</td>
+   									 		<td>Alfredo</td>
+  									    		<td>0-1</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">4</td>
+   									   		<td>Vincent</td>
+  									    		<td>0-1</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">5</td>
+   									   		<td>Irving</td>
+  									    		<td>0-2</td>
+ 									   	</tr>
+									
+  										
+
+								</table>
+								
+								
+								<p> </p>
+								
+								<h3 style="text-align:center">La Liga </h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/leaguemd22324.png" alt=""/>
+								</div>
+								
+							
+							
+								<div id="MD2Liga" style="height: 300px; width: 100%;"></div>
+								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+								</div>
+								
+							
+							
+								<p> </p>
+								<h3 style="text-align:center">Best Squad</h3>
+								<h4 style="text-align:center">Joao (67 points)</h4>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/bestmd22324.png" alt=""/>
+								</div>
+						
+
+								<p> </p>
+
+								<h3 style="text-align:center">Pichichi Trophy (Most Matchdays Won) </h3>
+ 								<table>
+  										<tr>
+  									    		<td>1</td>
+   									   		<td>Joao (2)</td>
+  									    		<td>MD1, MD2</td>
+										</tr>
+								</table>
+								
+								
+								
+									<h3 style = "text-align:center">News and Observations</h3>
+									<ul>
+										<li><p>Joao continues to assert his dominance both in the league and in the cup</p></li>
+										<li><p> Genaro is not far away from Joao and will seek to dominate next time around.</p></li>
+										<li><p> For the first time ever, Irving ranks last in the cup, will he bounce back?</p></li>
+										<li><p> Matchday 3 is on October 24th, you have two transfers. </p></li>
+										<li><p> The following will face each other on Matchday 3</p>										
+										<table>
+											<tr>
+												<th colspan="2"> Matchday 3 </th>
+											</tr>
+											<tr>
+												<td>Alfredo</td>
+												<td>Irving</td>
+											</tr>
+											<tr>
+												<td>Genaro</td>
+												<td>Vincent</td>
+											</tr>
+										
+											<tr>
+												<td>Joao</td>
+												<td>Bye</td>
+											</tr>
+										
+										</table>
+										</li>
+										<li><p>#GenarofortheSacko2024</p></li>										
+									</ul>
+							</article>
+
+						
+						
+						
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2>Matchday 1</h2>
+									</div>
+									<div class="meta">
+										<h3>  September 19th and 20th, 2023</h3>
+									</div>
+								</header>
+
+								<h3 style="text-align:center">Results</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/md12324.png" alt=""/>
+								</div>
+								<p> </p> <br>
+								<h3 style="text-align:center">Copa Cuervos</h3>
+								<table>
+										<tr>
+											<td><b> Genaro (85) </b></td>
+											<td> Irving (68) </td>
+										</tr>
+										<tr>
+											<td><b> Joao (102) </b></td>
+											<td> Vincent (66) </td>
+										</tr>
+										<tr>
+											<td> Alfredo (62) </td>
+											<td>  BYE </td>
+										</tr>
+										
+								</table>
+								<p> </p> 
+								<h3 style="text-align:center">Copa Cuervos Faceoffs</h3>
+								<table>
+										<tr>
+											<td> </td>
+											<td> Alfredo </td>
+											<td> Genaro </td>
+											<td> Irving </td>
+											<td> Joao </td>
+											<td> Vincent </td>
+											<td> Alfredo (II)</td>
+											<td> Genaro (II)</td>
+											<td> Irving (II)</td>
+											<td> Joao (II)</td>
+											<td> Vincent (II)</td>
+										</tr>
+										<tr>
+											<td> Alfredo </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Genaro </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Irving </td>
+											<td> </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											
+										</tr>
+										<tr>
+											<td> Joao </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> Vincent </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#FFFC33">X</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td bgcolor="#FFFC33">X</td>
+										</tr>
+								</table>
+								<p> </p> 
+
+							
+								<h3 style="text-align:center">Copa Cuervos Standings</h3>
+ 								<table class="tablec">
+  										<tr>
+  									    		<td bgcolor="#A2FF33">1</td>
+   									   		<td>Joao</td>
+  									    		<td>1-0</td>											   
+										</tr>
+			
+  										<tr>
+  									    		<td bgcolor="#FFFC33">2</td>
+   									   		<td>Genaro</td>
+  											<td>1-0</td>
+ 									   	</tr>
+														
+  										<tr>
+  											<td bgcolor="#FFFC33">3</td>
+   									 		<td>Alfredo</td>
+  									    		<td>0-0</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">4</td>
+   									   		<td>Irving</td>
+  									    		<td>0-1</td>
+ 									   	</tr>
+														
+  										<tr>
+  									    		<td bgcolor="#EA7E66">5</td>
+   									   		<td>Vincent</td>
+  									    		<td>0-1</td>
+ 									   	</tr>
+									
+  										
+
+								</table>
+								
+								
+								<p> </p>
+								
+								<h3 style="text-align:center">La Liga </h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/leaguemd12324.png" alt=""/>
+								</div>
+								
+							
+							
+								<div id="MD2Liga" style="height: 300px; width: 100%;"></div>
+								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+								</div>
+								
+							
+							
+								<p> </p>
+								<h3 style="text-align:center">Best Squad</h3>
+								<h4 style="text-align:center">Joao (102 points)</h4>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2324/bestmd12324.png" alt=""/>
+								</div>
+						
+
+								<p> </p>
+								
+								
+								
+									<h3 style = "text-align:center">News and Observations</h3>
+									<ul>
+  										<li><p>Taking a step back, Irving starts with a lousy start against Cup winner Joao, who is also this week's top scorer.</p></li>
+										<li><p> Genaro easily defeats Irving in their classic match.</p></li>
+										<li><p> Vincent and Alfredo have some catching up to do</p></li>
+										<li><p> Matchday 2 is on October 3rd, you have two transfers. </p></li>
+										<li><p> The following will face each other on Matchday 2</p>										
+										<table>
+											<tr>
+												<th colspan="2"> Matchday 2 </th>
+											</tr>
+											<tr>
+												<td>Joao</td>
+												<td>Irving</td>
+											</tr>
+											<tr>
+												<td>Genaro</td>
+												<td>Alfredo</td>
+											</tr>
+										
+											<tr>
+												<td>Vincent</td>
+												<td>Bye</td>
+											</tr>
+										
+										</table>
+										</li>
+										<li><p>#GenarofortheSacko2024</p></li>										
+									</ul>
+							</article>
+
+			
+						
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2 style="text-align:center">Copa Cuervos Matches</h2>
+									</div>
+									
+								</header>
+
+								<h3 style="text-align:center">Matchday 1</h3>
+								<table>
+										<tr>
+											<td>Irving</td>
+											<td>Genaro</td>
+										</tr>
+										<tr>
+											<td>Joao</td>
+											<td>Vincent</td>
+										</tr>
+										<tr>
+											<td>Alfredo</td>
+											<td>BYE</td>
+										</tr>
+										
+								</table>
+							
+								<p> </p> 
+								
+								<h3 style="text-align:center">Matchday 2</h3>
+								<table>
+										<tr>
+											<td>Irving</td>
+											<td>Joao</td>
+										</tr>
+										<tr>
+											<td>Alfredo</td>
+											<td>Genaro</td>
+										</tr>
+										<tr>
+											<td>Vincent</td>
+											<td>BYE</td>
+										</tr>
+										
+								</table>
+							
+								<p> </p>
+								<h3 style="text-align:center">Matchday 3</h3>
+								<table>
+										<tr>
+											<td>Irving</td>
+											<td>Alfredo</td>
+										</tr>
+										<tr>
+											<td>Genaro</td>
+											<td>Vincent</td>
+										</tr>
+										<tr>
+											<td>Joao</td>
+											<td>BYE</td>
+										</tr>
+										
+								</table>
+								<p> </p>
+								<h3 style="text-align:center">Matchday 4</h3>
+								<table>
+										<tr>
+											<td>Joao</td>
+											<td>Genaro</td>
+										</tr>
+										<tr>
+											<td>Alfredo</td>
+											<td>Vincent</td>
+										</tr>
+										<tr>
+											<td>Irving</td>
+											<td>BYE</td>
+										</tr>
+										
+								</table>
+								<p> </p>
+								<h3 style="text-align:center">Matchday 5</h3>
+								<table>
+										<tr>
+											<td>Irving</td>
+											<td>Vincent</td>
+										</tr>
+										<tr>
+											<td>Joao</td>
+											<td>Alfredo</td>
+										</tr>
+										<tr>
+											<td>Vincent</td>
+											<td>BYE</td>
+										</tr>
+										
+								</table>
+								<p> </p>
+
+								<h3 style="text-align:center">Matchday 6</h3>
+								<table>
+										<tr>
+											<td>Irving</td>
+											<td>Genaro</td>
+										</tr>
+										<tr>
+											<td>Joao</td>
+											<td>Vincent</td>
+										</tr>
+										<tr>
+											<td>Alfredo</td>
+											<td>BYE</td>
+										</tr>
+										
+								</table>
+							
+								<p> </p> 
+								
+								<h3 style="text-align:center">Matchday 7</h3>
+								<table>
+										<tr>
+											<td>Irving</td>
+											<td>Joao</td>
+										</tr>
+										<tr>
+											<td>Alfredo</td>
+											<td>Genaro</td>
+										</tr>
+										<tr>
+											<td>Vincent</td>
+											<td>BYE</td>
+										</tr>
+										
+								</table>
+							
+								<p> </p>
+								<h3 style="text-align:center">Matchday 8</h3>
+								<table>
+										<tr>
+											<td>Irving</td>
+											<td>Alfredo</td>
+										</tr>
+										<tr>
+											<td>Genaro</td>
+											<td>Vincent</td>
+										</tr>
+										<tr>
+											<td>Joao</td>
+											<td>BYE</td>
+										</tr>
+										
+								</table>
+								<p> </p>
+								<h3 style="text-align:center">Matchday 9</h3>
+								<table>
+										<tr>
+											<td>Joao</td>
+											<td>Genaro</td>
+										</tr>
+										<tr>
+											<td>Alfredo</td>
+											<td>Vincent</td>
+										</tr>
+										<tr>
+											<td>Irving</td>
+											<td>BYE</td>
+										</tr>
+										
+								</table>
+								<p> </p>
+								<h3 style="text-align:center">Matchday 10</h3>
+								<table>
+										<tr>
+											<td>Irving</td>
+											<td>Vincent</td>
+										</tr>
+										<tr>
+											<td>Joao</td>
+											<td>Alfredo</td>
+										</tr>
+										<tr>
+											<td>Vincent</td>
+											<td>BYE</td>
+										</tr>
+										
+								</table>
+								
+							</article>
+						
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2 style="text-align:center">2022-2023 Season Champions</h2>
+									</div>
+									
+									
+								</header>
+								<h3 style="text-align:center">Copa Cuervos</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2223/joaochamp.png" alt=""/>
+								</div>
+							
+								</header>
+								<h3 style="text-align:center">La Liga</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2223/irvingchamp.png" alt=""/>
+								</div>
+						
+								</header>
+								<h3 style="text-align:center">Pichichi Trophy (Most Matchdays won)</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2223/irvingpichichi.png" alt=""/>
+								</div>
+								
+							</article>
+						
+
+
+						
+						
+
+				
+
+						<!-- Post -->
+						<!--
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Elements</a></h2>
+										<p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2015-10-18">October 18, 2015</time>
+										<a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+
+								<section>
+									<h3>Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+  print 'Iteration ' + i;
+  deck.shuffle();
+  i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3>Lists</h3>
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<h4>Unordered</h4>
+											<ul>
+												<li>Dolor pulvinar etiam.</li>
+												<li>Sagittis adipiscing.</li>
+												<li>Felis enim feugiat.</li>
+											</ul>
+											<h4>Alternate</h4>
+											<ul class="alt">
+												<li>Dolor pulvinar etiam.</li>
+												<li>Sagittis adipiscing.</li>
+												<li>Felis enim feugiat.</li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-medium">
+											<h4>Ordered</h4>
+											<ol>
+												<li>Dolor pulvinar etiam.</li>
+												<li>Etiam vel felis viverra.</li>
+												<li>Felis enim feugiat.</li>
+												<li>Dolor pulvinar etiam.</li>
+												<li>Etiam vel felis lorem.</li>
+												<li>Felis enim et feugiat.</li>
+											</ol>
+											<h4>Icons</h4>
+											<ul class="icons">
+												<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+											</ul>
+										</div>
+									</div>
+									<h3>Actions</h3>
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<ul class="actions">
+												<li><a href="#" class="button">Default</a></li>
+												<li><a href="#" class="button">Default</a></li>
+												<li><a href="#" class="button">Default</a></li>
+											</ul>
+											<ul class="actions small">
+												<li><a href="#" class="button small">Small</a></li>
+												<li><a href="#" class="button small">Small</a></li>
+												<li><a href="#" class="button small">Small</a></li>
+											</ul>
+											<ul class="actions stacked">
+												<li><a href="#" class="button">Default</a></li>
+												<li><a href="#" class="button">Default</a></li>
+												<li><a href="#" class="button">Default</a></li>
+											</ul>
+											<ul class="actions stacked">
+												<li><a href="#" class="button small">Small</a></li>
+												<li><a href="#" class="button small">Small</a></li>
+												<li><a href="#" class="button small">Small</a></li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-medium">
+											<ul class="actions stacked">
+												<li><a href="#" class="button fit">Default</a></li>
+												<li><a href="#" class="button fit">Default</a></li>
+											</ul>
+											<ul class="actions stacked">
+												<li><a href="#" class="button small fit">Small</a></li>
+												<li><a href="#" class="button small fit">Small</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+
+								<section>
+									<h3>Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3>Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button large">Large</a></li>
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions fit">
+										<li><a href="#" class="button fit">Fit</a></li>
+										<li><a href="#" class="button fit">Fit</a></li>
+										<li><a href="#" class="button fit">Fit</a></li>
+									</ul>
+									<ul class="actions fit small">
+										<li><a href="#" class="button fit small">Fit + Small</a></li>
+										<li><a href="#" class="button fit small">Fit + Small</a></li>
+										<li><a href="#" class="button fit small">Fit + Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button icon fa-download">Icon</a></li>
+										<li><a href="#" class="button icon fa-upload">Icon</a></li>
+										<li><a href="#" class="button icon fa-save">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button disabled">Disabled</span></li>
+										<li><span class="button disabled icon fa-download">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3>Form</h3>
+									<form method="post" action="#">
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall">
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<select name="demo-category" id="demo-category">
+													<option value="">- Category -</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="col-4 col-12-small">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="col-4 col-12-small">
+												<input type="radio" id="demo-priority-normal" name="demo-priority">
+												<label for="demo-priority-normal">Normal</label>
+											</div>
+											<div class="col-4 col-12-small">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="col-6 col-12-small">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="col-6 col-12-small">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="col-12">
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" /></li>
+													<li><input type="reset" value="Reset" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</section>
+
+								<section>
+									<h3>Image</h3>
+									<h4>Fit</h4>
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+										</div>
+									</div>
+									<h4>Left &amp; Right</h4>
+									<p><span class="image left"><img src="images/pic07.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									<p><span class="image right"><img src="images/pic04.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+								</section>
+
+							</article>
+						-->
+				</div>
+
+				<!-- Sidebar -->
+					<section id="sidebar">
+
+						<!-- Intro -->
+							<section id="intro">
+								<div style="display: flex; justify-content: center;">
+									<img src="images/logo.png" width="100" height="100" align="middle" alt="" />
+								</div>
+									<header>
+										<h2>Cuervos Fantasy Club</h2>
+										<p>Elite Fantasy Football Club</p>
+									</header>
+							</section>
+
+						
+							
+						<!-- About -->
+							<section class="blurb">
+								<h2>About</h2>
+								<p>Grupo exclusivo de Champions League Fantasy. Por invitación únicamente.</p>
+							</section>
+
+						<!-- Footer -->
+							<section id="footer">
+								<div class="comp-info col-xs-4">
+             								<a class="logolink" title="UEFA Champions League" href="http://www.uefa.com/uefachampionsleague/">UEFA Champions League</a>
+           							</div>
+								<div class="comp-info col-xs-4">
+             								<a class="logolink" title="UEFA Champions League Fantasy" href="https://gaming.uefa.com/en/uclfantasy">UEFA Champions League Fantasy Hub</a>
+           							</div>
+							</section>
+
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
