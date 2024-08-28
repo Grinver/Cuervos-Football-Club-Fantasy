@@ -1,22 +1,23 @@
-
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     nav ul {
-        flex-direction: column; /* Stacks navigation items vertically on smaller screens */
+        justify-content: space-around; /* Space out nav items on larger screens */
     }
 
-    nav ul li {
-        margin: 10px 0; /* Adds margin between items */
-    }
-    
     header, footer {
-        font-size: 14px; /* Smaller font size on mobile */
+        font-size: 18px; /* Increase font size for larger screens */
     }
 }
 
-@media (min-width: 769px) {
-    header, footer {
-        font-size: 16px; /* Larger font size on larger screens */
+@media (min-width: 1200px) {
+    main {
+        padding: 40px; /* Increase padding on larger screens */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Larger heading on big screens */
+    }
+
+    h2 {
+        font-size: 2em; /* Larger subheading */
     }
 }
