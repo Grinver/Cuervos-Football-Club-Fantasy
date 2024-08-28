@@ -4,26 +4,24 @@
     flex-wrap: wrap;    /* Allows items to wrap onto new lines if necessary */
 }
 
-@media (min-width: 768px) {
-    nav ul {
-        justify-content: space-around; /* Space out nav items on larger screens */
-    }
 
-    header, footer {
-        font-size: 18px; /* Increase font size for larger screens */
+.item {
+    flex: 1 1 200px;    /* Flex grow, shrink, basis (min width) */
+    margin: 10px;       /* Space between items */
+    padding: 20px;      /* Padding inside items */
+    background-color: #eaeaea;
+    border: 1px solid #ccc; /* Border for visibility */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .item {
+        flex: 1 1 30%; /* 3 items in a row on larger screens */
     }
 }
 
 @media (min-width: 1200px) {
-    main {
-        padding: 40px; /* Increase padding on larger screens */
-    }
-
-    h1 {
-        font-size: 2.5em; /* Larger heading on big screens */
-    }
-
-    h2 {
-        font-size: 2em; /* Larger subheading */
+    .item {
+        flex: 1 1 25%; /* 4 items in a row on extra-large screens */
     }
 }
