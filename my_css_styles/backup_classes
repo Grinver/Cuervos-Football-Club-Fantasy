@@ -1,0 +1,29 @@
+table, td, th, tr {  
+  				border: 1px solid; 
+				text-align: center;
+			}
+			
+th[colspan="2"] {
+      text-align: center;
+  font-size: 1.15em;
+  padding-top: 12px;
+    padding-bottom: 12px;
+
+}
+
+table.tablec, td.tablec, th.tablec {  
+    border: 1px solid; 
+  text-align: center;
+}
+
+table {
+border-collapse: collapse;
+}
+
+table.tablec {
+border-collapse: collapse;
+}
+
+table tbody tr:nth-child(2n + 1) {
+  background-color: rgba(160, 160, 160, 0.075);
+} 
