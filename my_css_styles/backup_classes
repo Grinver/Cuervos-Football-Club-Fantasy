@@ -27,3 +27,11 @@ border-collapse: collapse;
 table tbody tr:nth-child(2n + 1) {
   background-color: rgba(160, 160, 160, 0.075);
 } 
+
+
+.container {
+    max-width: 800px; /* Maximum width for the container */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Inner padding */
+    border: 1px solid #ccc; /* Border for the container */
+}
