@@ -1,17 +1,9 @@
 
-.container {
-    display: flex;       /* or display: grid; */
-    flex-wrap: wrap;    /* Allows items to wrap onto new lines if necessary */
+main {
+    display: flex; /* Enable flex layout for main area */
+    flex: 1; /* Allow it to grow and fill remaining space */
 }
 
-
-.item {
-    flex: 1 1 200px;    /* Flex grow, shrink, basis (min width) */
-    margin: 10px;       /* Space between items */
-    padding: 20px;      /* Padding inside items */
-    background-color: #eaeaea;
-    border: 1px solid #ccc; /* Border for visibility */
-}
 
 /* Responsive adjustments */
 @media (min-width: 768px) {
