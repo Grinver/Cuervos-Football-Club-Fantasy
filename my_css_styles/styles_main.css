@@ -40,13 +40,6 @@ img.resizephone {
 	width: auto;
 }
 
-.container {
-    max-width: 800px; /* Maximum width for the container */
-    margin: 20px auto; /* Center the container */
-    padding: 20px; /* Inner padding */
-    border: 1px solid #ccc; /* Border for the container */
-}
-
 table {
     width: 100%; /* Full width of the container */
     border-collapse: collapse; /* Collapses borders into a single border */
