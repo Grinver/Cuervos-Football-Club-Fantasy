@@ -42,3 +42,31 @@ table tbody tr:nth-child(2n + 1) {
     margin: 0 auto; /* Center the container */
     padding: 0 20px; /* Add side padding */
 }
+
+
+
+
+@media (min-width: 768px) {
+    nav ul {
+        justify-content: space-around; /* Space out nav items on larger screens */
+    }
+
+    header, footer {
+        font-size: 18px; /* Increase font size for larger screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        padding: 40px; /* Increase padding on larger screens */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Larger heading on big screens */
+    }
+
+    h2 {
+        font-size: 2em; /* Larger subheading */
+    }
+}
+
