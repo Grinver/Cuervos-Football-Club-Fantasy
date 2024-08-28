@@ -70,3 +70,10 @@ table tbody tr:nth-child(2n + 1) {
     }
 }
 
+
+.container {
+    display: flex;       /* or display: grid; */
+    flex-wrap: wrap;    /* Allows items to wrap onto new lines if necessary */
+}
+
+
