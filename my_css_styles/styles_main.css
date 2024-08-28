@@ -1,46 +1,68 @@
 <style>
-			img.resize1 {
-  				<!--width: 800;-->
-  				<!--height: 400;-->
-				width: 100%;
-				height: 100%;
-  				margin-left: auto;
-  				margin-right: auto;
-			}
-			
-			img.resizephone {
- 				 width: auto ;
-  				 max-width: 100% ;
-  				 height: auto ;
-			}
-		
-			
-			
-			* {
-			  box-sizing: border-box;
-			}
+	img.resize1 {
+		<!--width: 800;-->
+		<!--height: 400;-->
+		width: 100%;
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	img.resizephone {
+		 width: auto ;
+		 max-width: 100% ;
+		 height: auto ;
+	}
 
-			.column {
-				float: left;
-				width: 50%;
-				padding: 5px;
-			}
+	
+	
+	* {
+	  box-sizing: border-box;
+	}
 
-			/* Clearfix (clear floats) */
-			.row::after {
-				content: "";
-				clear: both;
-				display: table;
-			}
-			
-			.center {
- 				display: block;
-  				margin-left: auto;
- 				margin-right: auto;
-  				<!--width: 75%;-->
-				width: auto;
-			}
-			
-			
-			
-		</style>
+	.column {
+		float: left;
+		width: 50%;
+		padding: 5px;
+	}
+
+	/* Clearfix (clear floats) */
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		<!--width: 75%;-->
+		width: auto;
+	}
+
+	.container {
+	    max-width: 800px; /* Maximum width for the container */
+	    margin: 20px auto; /* Center the container */
+	    padding: 20px; /* Inner padding */
+	    border: 1px solid #ccc; /* Border for the container */
+	}
+	
+	table {
+	    width: 100%; /* Full width of the container */
+	    border-collapse: collapse; /* Collapses borders into a single border */
+	    table-layout: fixed; /* Use fixed table layout */
+	}
+	
+	th, td {
+	    border: 1px solid #ccc; /* Table cell borders */
+	    padding: 8px; /* Padding within cells */
+	    text-align: left; /* Align text to the left */
+	    overflow: hidden; /* Ensure overflow is hidden */
+	    white-space: nowrap; /* Prevent text from wrapping */
+	    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+	}
+
+	
+	
+</style>
