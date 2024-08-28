@@ -60,7 +60,7 @@
 	    text-align: left; /* Align text to the left */
 	    overflow: hidden; /* Ensure overflow is hidden */
 	    white-space: nowrap; /* Prevent text from wrapping */
-	    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+	    text-overflow: clip; /* Add ellipsis for overflowed text */
 	}
 
 	
