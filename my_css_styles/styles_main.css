@@ -57,8 +57,8 @@
 	th, td {
 	    border: 1px solid #ccc; /* Table cell borders */
 	    padding: 8px; /* Padding within cells */
-	    text-align: left; /* Align text to the left */
-	    overflow: hidden; /* Ensure overflow is hidden */
+	    text-align: center; /* Align text to the left */
+	    overflow: clip; /* Ensure overflow is hidden */
 	    white-space: nowrap; /* Prevent text from wrapping */
 	    text-overflow: clip; /* Add ellipsis for overflowed text */
 	}
