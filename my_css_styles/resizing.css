@@ -1,0 +1,22 @@
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stacks navigation items vertically on smaller screens */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adds margin between items */
+    }
+    
+    header, footer {
+        font-size: 14px; /* Smaller font size on mobile */
+    }
+}
+
+@media (min-width: 769px) {
+    header, footer {
+        font-size: 16px; /* Larger font size on larger screens */
+    }
+}
