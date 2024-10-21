@@ -42,7 +42,7 @@ img.resizephone {
 }
 
 table {
-    width: auto; /* Full width of the container */
+    width: 100%; /* Full width of the container */
     border-collapse: collapse; /* Collapses borders into a single border */
     table-layout: fixed; /* Use fixed table layout */
 }
