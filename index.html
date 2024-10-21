@@ -28,7 +28,7 @@
 		<meta charset="UTF-8">
 		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	    	<!--<title>Line Graph Example</title>-->
-		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 		<title>La Liga Race Chart</title>
     		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 	
@@ -345,113 +345,6 @@
 								</table>
 
 
-
-								<div id="MD2Liga" style="height: 300px; width: 100%;"></div>
-								    <script>
-								        function createLaLigaRaceChart(containerId, title, dataSeries) {
-								            const chart = new CanvasJS.Chart(containerId, {
-								                animationEnabled: true,
-								                theme: "light2",
-								                title: {
-								                    text: title
-								                },
-								                axisX: {
-								                    title: "Matchday",
-								                    interval: 1,
-								                },
-								                axisY: {
-								                    title: "Points",
-								                },
-								                legend: {
-								                    cursor: "pointer",
-								                    verticalAlign: "top",
-								                    horizontalAlign: "center",
-								                    dockInsidePlotArea: true,
-								                    itemclick: toggleDataSeries
-								                },
-								                data: dataSeries
-								            });
-								
-								            chart.render();
-								
-								            function toggleDataSeries(e) {
-								                if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-								                    e.dataSeries.visible = false;
-								                } else {
-								                    e.dataSeries.visible = true;
-								                }
-								                chart.render();
-								            }
-								        }
-								
-								        const data = [
-								            {
-								                type: "spline",
-								                name: "Alfredo",
-								                showInLegend: true,
-								                indexLabelFontSize: 16,
-								                dataPoints: [
-								                    { x: 1, y: 0 },
-								                    { x: 2, y: 89 }	
-								                ]
-								            },
-								            {
-								                type: "spline",
-								                name: "Genaro",
-								                showInLegend: true,
-								                indexLabelFontSize: 16,
-								                dataPoints: [
-								                    { x: 1, y: 0 },
-								                    { x: 2, y: 44 }
-								                ]
-								            },
-								            {
-								                type: "spline",
-								                name: "Joao",
-								                showInLegend: true,
-								                indexLabelFontSize: 16,
-								                dataPoints: [
-								                    { x: 1, y: 0 },
-								                    { x: 2, y: 136 }
-								                ]
-								            },
-								            {
-								                type: "spline",
-								                name: "Alonso",
-								                showInLegend: true,
-								                indexLabelFontSize: 16,
-								                dataPoints: [
-								                    { x: 1, y: 0 },
-								                    { x: 2, y: 44 }
-								                ]
-								            },
-								            {
-								                type: "spline",
-								                name: "Irving",
-								                showInLegend: true,
-								                indexLabelFontSize: 16,
-								                dataPoints: [
-								                    { x: 1, y: 0 },
-								                    { x: 2, y: 108 }
-								                ]
-								            },
-								            {
-								                type: "spline",
-								                name: "Jeppe",
-								                showInLegend: true,
-								                indexLabelFontSize: 16,
-								                dataPoints: [
-								                    { x: 1, y: 0 },
-								                    { x: 2, y: 65 }
-								                ]
-								            }
-								        ];
-								
-								        window.onload = function () {
-								            createLaLigaRaceChart("MD2Liga", "La Liga Race", data);
-								        }
-								
-							
 							
 								<p> </p>
 								<h3 style="text-align:center">Best Squad</h3>
