@@ -29,8 +29,10 @@
 		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	    	<!--<title>Line Graph Example</title>-->
 		<!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
-		<title>La Liga Race Chart</title>
-    		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+		<!--<title>La Liga Race Chart</title>-->
+    		<!--<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>-->
+		<title>Connecting Scatter Graph</title>
+    		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	
 		
 	</head>
@@ -343,6 +345,72 @@
  									   	</tr>
 									
 								</table>
+
+								<canvas id="myScatterChart" width="400" height="200"></canvas>
+								    <script>
+								        const ctx = document.getElementById('myScatterChart').getContext('2d');
+								        const data = {
+								            datasets: [{
+								                label: 'La Liga Race',
+								                data: [
+								                    {x: 1, y: 136, label: 'Joao'},
+								                    {x: 2, y: 108, label: 'Irving'},
+								                    {x: 3, y: 89, label: 'Alfredo'},
+								                    {x: 4, y: 65, label: 'Jeppe'},
+								                    {x: 5, y: 44, label: 'Alonso'},
+								                    {x: 6, y: 44, label: 'Genaro'}
+								                ],
+								                borderColor: 'rgba(75, 192, 192, 1)',
+								                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+								                showLine: true,
+								                fill: false,
+								                pointRadius: 5,
+								                pointHoverRadius: 7,
+								            }]
+								        };
+								
+								        const config = {
+								            type: 'scatter',
+								            data: data,
+								            options: {
+								                scales: {
+								                    x: {
+								                        type: 'linear',
+								                        position: 'bottom',
+								                        title: {
+								                            display: true,
+								                            text: 'Ranking Position'
+								                        }
+								                    },
+								                    y: {
+								                        beginAtZero: true,
+								                        title: {
+								                            display: true,
+								                            text: 'Points'
+								                        }
+								                    }
+								                },
+								                plugins: {
+								                    tooltip: {
+								                        callbacks: {
+								                            label: function(context) {
+								                                let label = context.raw.label || '';
+								                                if (label) {
+								                                    label += ': ';
+								                                }
+								                                if (context.raw !== null) {
+								                                    label += context.raw.y;
+								                                }
+								                                return label;
+								                            }
+								                        }
+								                    }
+								                }
+								            }
+								        };
+								
+								        const myScatterChart = new Chart(ctx, config);
+								    </script>
 
 
 							
