@@ -31,7 +31,7 @@
 		<!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 		<!--<title>La Liga Race Chart</title>-->
     		<!--<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>-->
-		<title>Connecting Scatter Graph</title>
+		<title>Individual Scatter Lines</title>
     		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	
 		
@@ -347,71 +347,98 @@
 								</table>
 
 								<canvas id="myScatterChart" width="400" height="200"></canvas>
-								    <script>
-								        const ctx = document.getElementById('myScatterChart').getContext('2d');
-								        const data = {
-								            datasets: [{
-								                label: 'La Liga Race',
-								                data: [
-								                    {x: 1, y: 136, label: 'Joao'},
-								                    {x: 2, y: 108, label: 'Irving'},
-								                    {x: 3, y: 89, label: 'Alfredo'},
-								                    {x: 4, y: 65, label: 'Jeppe'},
-								                    {x: 5, y: 44, label: 'Alonso'},
-								                    {x: 6, y: 44, label: 'Genaro'}
-								                ],
-								                borderColor: 'rgba(75, 192, 192, 1)',
-								                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-								                showLine: true,
-								                fill: false,
-								                pointRadius: 5,
-								                pointHoverRadius: 7,
-								            }]
-								        };
-								
-								        const config = {
-								            type: 'scatter',
-								            data: data,
-								            options: {
-								                scales: {
-								                    x: {
-								                        type: 'linear',
-								                        position: 'bottom',
-								                        title: {
-								                            display: true,
-								                            text: 'Ranking Position'
-								                        }
-								                    },
-								                    y: {
-								                        beginAtZero: true,
-								                        title: {
-								                            display: true,
-								                            text: 'Points'
-								                        }
-								                    }
-								                },
-								                plugins: {
-								                    tooltip: {
-								                        callbacks: {
-								                            label: function(context) {
-								                                let label = context.raw.label || '';
-								                                if (label) {
-								                                    label += ': ';
-								                                }
-								                                if (context.raw !== null) {
-								                                    label += context.raw.y;
-								                                }
-								                                return label;
-								                            }
-								                        }
-								                    }
-								                }
-								            }
-								        };
-								
-								        const myScatterChart = new Chart(ctx, config);
-								    </script>
-
+    <script>
+							        const ctx = document.getElementById('myScatterChart').getContext('2d');
+							
+							        const data = {
+							            datasets: [
+							                {
+							                    label: 'Joao',
+							                    data: [{x: 1, y: 136}],
+							                    borderColor: 'rgba(255, 99, 132, 1)',
+							                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+							                    showLine: true,
+							                    fill: false,
+							                    pointRadius: 5
+							                },
+							                {
+							                    label: 'Irving',
+							                    data: [{x: 2, y: 108}],
+							                    borderColor: 'rgba(54, 162, 235, 1)',
+							                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+							                    showLine: true,
+							                    fill: false,
+							                    pointRadius: 5
+							                },
+							                {
+							                    label: 'Alfredo',
+							                    data: [{x: 3, y: 89}],
+							                    borderColor: 'rgba(75, 192, 192, 1)',
+							                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+							                    showLine: true,
+							                    fill: false,
+							                    pointRadius: 5
+							                },
+							                {
+							                    label: 'Jeppe',
+							                    data: [{x: 4, y: 65}],
+							                    borderColor: 'rgba(153, 102, 255, 1)',
+							                    backgroundColor: 'rgba(153, 102, 255, 0.2)',
+							                    showLine: true,
+							                    fill: false,
+							                    pointRadius: 5
+							                },
+							                {
+							                    label: 'Alonso',
+							                    data: [{x: 5, y: 44}],
+							                    borderColor: 'rgba(255, 159, 64, 1)',
+							                    backgroundColor: 'rgba(255, 159, 64, 0.2)',
+							                    showLine: true,
+							                    fill: false,
+							                    pointRadius: 5
+							                },
+							                {
+							                    label: 'Genaro',
+							                    data: [{x: 6, y: 44}],
+							                    borderColor: 'rgba(255, 205, 86, 1)',
+							                    backgroundColor: 'rgba(255, 205, 86, 0.2)',
+							                    showLine: true,
+							                    fill: false,
+							                    pointRadius: 5
+							                }
+							            ]
+							        };
+							
+							        const config = {
+							            type: 'scatter',
+							            data: data,
+							            options: {
+							                scales: {
+							                    x: {
+							                        type: 'linear',
+							                        position: 'bottom',
+							                        title: {
+							                            display: true,
+							                            text: 'Ranking Position'
+							                        },
+							                        min: 0,
+							                        max: 7
+							                    },
+							                    y: {
+							                        beginAtZero: true,
+							                        title: {
+							                            display: true,
+							                            text: 'Points'
+							                        },
+							                        min: 0,
+							                        max: 150
+							                    }
+							                }
+							            }
+							        };
+							
+							        const myScatterChart = new Chart(ctx, config);
+							    </script>
 
 							
 								<p> </p>
