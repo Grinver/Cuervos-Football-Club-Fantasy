@@ -20,7 +20,6 @@ img.resizephone {
   box-sizing: border-box;
 }
 
-<!--
 .column {
 	float: left;
 	width: 100%;
@@ -41,10 +40,9 @@ img.resizephone {
 	<!--width: 75%;-->
 	width: auto;
 }
--->
 
 table {
-    width: 100%; /* Full width of the container */
+    width: auto; /* Full width of the container */
     border-collapse: collapse; /* Collapses borders into a single border */
     table-layout: fixed; /* Use fixed table layout */
 }
