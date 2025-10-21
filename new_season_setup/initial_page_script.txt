@@ -1,0 +1,535 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable="no" />
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+		
+		 <link rel = "icon" href =  
+"https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/022016/logo_cuervos.jpg?itok=GBm3IHyB" 
+        type = "image/x-icon"> 
+          
+		
+	
+		<title>Cuervos Fantasy Club</title>
+		<meta charset="utf-8" />
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> -->
+		<link rel="stylesheet" href="assets/css/main.css" /> 
+
+		<link rel="stylesheet" href="my_css_styles/styles_main.css" />
+
+		<!-- <link rel="stylesheet" href="my_css_styles/resizing.css" /> -->
+
+		<meta charset="UTF-8">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	    	<!--<title>Line Graph Example</title>-->
+		<!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+		<!--<title>La Liga Race Chart</title>-->
+    		<!--<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>-->
+		<title>Individual Scatter Lines</title>
+    		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	
+		
+	</head>
+	<body class="is-preload">
+		
+		<div class="container">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Competitions</a></h1>
+						<nav class="links">
+							<ul>	
+								<li><a href="cl2425.html">CL 2024-2025</a></li>
+								<li><a href="cl2324.html">CL 2023-2024</a></li>
+								<li><a href="cl2223.html">CL 2022-2023</a></li>
+								<li><a href="cl2122.html">CL 2021-2022</a></li>
+								<li><a href="ec2020.html">Euro Cup 2020</a></li>
+								<li><a href="cl2021.html">CL 2020-2021</a></li>
+								<li><a href="cl201920.html">CL 2019-2020</a></li>
+								<li><a href="cl201819.html">CL 2018-2019</a></li>
+								<li><a href="wc2018.html">World Cup 2018</a></li>
+								<li><a href="cl201718.html">CL 2017-2018</a></li>
+								<li><a href="cl201617.html">CL 2016-2017</a></li>
+								<li><a href="ec2016.html">Euro Cup 2016</a></li>
+								<li><a href="cl201516.html">CL 2015-2016</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="cl2425.html">
+											<h3>CL 2024-2025</h3>
+										</a>
+									</li>
+									<li>
+										<a href="cl2324.html">
+											<h3>CL 2023-2024</h3>
+										</a>
+									</li>
+									<li>
+										<a href="cl2223.html">
+											<h3>CL 2022-2023</h3>
+										</a>
+									</li>
+									<li>
+										<a href="cl2122.html">
+											<h3>CL 2021-2022</h3>
+										</a>
+									</li>
+									<li>
+										<a href="ec2020.html">
+											<h3>Euro Cup 2020</h3>
+										</a>
+									</li>
+									<li>
+										<a href="cl2021.html">
+											<h3>CL 2020-2021</h3>
+										</a>
+									</li>
+									<li>
+										<a href="cl201920.html">
+											<h3>CL 2019-2020</h3>
+										</a>
+									</li>
+									<li>
+										<a href="cl201819.html">
+											<h3>CL 2018-2019</h3>
+										</a>
+									</li>
+									<li>
+										<a href="wc2018.html">
+											<h3>World Cup 2018</h3>
+										</a>
+									</li>
+									<li>
+										<a href="cl201718.html">
+											<h3>CL 2017-2018</h3>
+										</a>
+									</li>
+									<li>
+										<a href="cl201617.html">
+											<h3>CL 2016-2017</h3>
+										</a>
+									</li>
+									<li>
+										<a href="ec2016.html">
+											<h3>Euro Cup 2016</h3>
+										</a>
+									</li>
+									<li>
+										<a href="cl201516.html">
+											<h3>CL 2015-2016</h3>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+				
+				
+					<div id="main">
+						<h1 style="text-align:center">Champions League 2024-2025</h1>
+
+
+					
+		
+								
+						
+						<article class="post">
+								<header>
+									<div class="title">
+										<h2 style="text-align:center">Copa Cuervos Matches</h2>
+									</div>
+									
+								</header>
+
+								<h3 style="text-align:center">Matchday 3</h3>
+								<table>
+										<tr>
+											<td>Irving</td>
+											<td>Genaro</td>
+										</tr>
+										<tr>
+											<td>Joao</td>
+											<td>Golden Goal</td>
+										</tr>
+										<tr>
+											<td>Alfredo</td>
+											<td>FPL Dylan</td>
+										</tr>
+										
+								</table>
+							
+								<p> </p> 
+								
+								<h3 style="text-align:center">Matchday 4</h3>
+								<table>
+										<tr>
+											<td>Genaro</td>
+											<td>Joao</td>
+										</tr>
+										<tr>
+											<td>Golden Goal</td>
+											<td>FPL Dylan</td>
+										</tr>
+										<tr>
+											<td>Alfredo</td>
+											<td>Irving</td>
+										</tr>
+										
+								</table>
+							
+								<p> </p>
+								<h3 style="text-align:center">Matchday 5</h3>
+								<table>
+										<tr>
+											<td>Irving</td>
+											<td>Joao</td>
+										</tr>
+										<tr>
+											<td>Genaro</td>
+											<td>FPL Dylan</td>
+										</tr>
+										<tr>
+											<td>Golden Goal</td>
+											<td>Alfredo</td>
+										</tr>
+										
+								</table>
+								<p> </p>
+								<h3 style="text-align:center">Matchday 6</h3>
+								<table>
+										<tr>
+											<td>Joao</td>
+											<td>FPL Dylan</td>
+										</tr>
+										<tr>
+											<td>Alfredo</td>
+											<td>Genaro</td>
+										</tr>
+										<tr>
+											<td>Irving</td>
+											<td>Golden Goal</td>
+										</tr>
+										
+								</table>
+								<p> </p>
+								<h3 style="text-align:center">Matchday 7</h3>
+								<table>
+										<tr>
+											<td>Irving</td>
+											<td>FPL Dylan</td>
+										</tr>
+										<tr>
+											<td>Joao</td>
+											<td>Alfredo</td>
+										</tr>
+										<tr>
+											<td>Genaro</td>
+											<td>Golden Goal</td>
+										</tr>
+										
+								</table>
+								<p> </p>
+
+								<h3 style="text-align:center">Matchday 8</h3>
+								<table>
+										<tr>
+											<td>Irving</td>
+											<td>Genaro</td>
+										</tr>
+										<tr>
+											<td>Joao</td>
+											<td>Golden Goal</td>
+										</tr>
+										<tr>
+											<td>Alfredo</td>
+											<td>FPL Dylan</td>
+										</tr>
+										
+								</table>
+							
+								<p> </p> 
+								
+								<h3 style="text-align:center">Matchday 9</h3>
+								<table>
+										<tr>
+											<td>Genaro</td>
+											<td>Joao</td>
+										</tr>
+										<tr>
+											<td>Golden Goal</td>
+											<td>FPL Dylan</td>
+										</tr>
+										<tr>
+											<td>Alfredo</td>
+											<td>Irving</td>
+										</tr>
+										
+								</table>
+							
+								<p> </p>
+								<h3 style="text-align:center">Matchday 10</h3>
+								<table>
+										<tr>
+											<td>Irving</td>
+											<td>Joao</td>
+										</tr>
+										<tr>
+											<td>Genaro</td>
+											<td>FPL Dylan</td>
+										</tr>
+										<tr>
+											<td>Golden Goal</td>
+											<td>Alfredo</td>
+										</tr>
+										
+								</table>
+								<p> </p>
+								<h3 style="text-align:center">Matchday 11</h3>
+								<table>
+										<tr>
+											<td>Joao</td>
+											<td>FPL Dylan</td>
+										</tr>
+										<tr>
+											<td>Alfredo</td>
+											<td>Genaro</td>
+										</tr>
+										<tr>
+											<td>Irving</td>
+											<td>Golden Goal</td>
+										</tr>
+										
+								</table>
+								<p> </p>
+								<h3 style="text-align:center">Matchday 12</h3>
+								<table>
+										<tr>
+											<td>Irving</td>
+											<td>FPL Dylan</td>
+										</tr>
+										<tr>
+											<td>Joao</td>
+											<td>Alfredo</td>
+										</tr>
+										<tr>
+											<td>Genaro</td>
+											<td>Golden Goal</td>
+										</tr>
+										
+								</table>
+								
+							</article>
+
+
+											<article class="post">
+								<header>
+									<div class="title">
+										<h2 style="text-align:center">2024-2025 Season Champions</h2>
+									</div>
+									
+									
+								</header>
+								<h3 style="text-align:center">Copa Cuervos</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2122/Genarochamp.png" alt=""/>
+								</div>
+							
+								</header>
+								<h3 style="text-align:center">La Liga and Pichichi Trophy</h3>
+								<div style="display: flex; justify-content: center;">
+									<img class="resizephone" src="imagesCL2223/joaochamp.png" alt=""/>
+								</div>
+							</article>
+
+		
+								
+						<!--
+								<script>
+								window.onload = function () {
+						
+								var chart2 = new CanvasJS.Chart("MD2Liga", {
+									animationEnabled: true,
+									theme: "light2",
+									title:{
+										text: "La Liga Race"
+									},
+									axisX: {
+										title: "Matchday",
+										interval: 1,
+									},
+									axisY: {
+										title: "Points",
+									},
+									legend: {
+										cursor: "pointer",
+										verticalAlign: "top",
+										horizontalAlign: "center",
+										dockInsidePlotArea: true,
+										itemclick: toogleDataSeries
+									},
+									data: [{        
+										type: "spline",
+										name: "Alfredo",
+										showInLegend: true,
+									indexLabelFontSize: 16,
+										dataPoints: [
+											{ y: 0},
+											{y: 89}	
+										]
+								       },
+								       {        
+										type: "spline",
+										name: "Genaro",
+									        showInLegend: true,
+									indexLabelFontSize: 16,
+										dataPoints: [
+											{ y: 0},
+											{y: 44}
+										]
+								       },
+								        {        
+										type: "spline",
+										name: "Joao",
+									        showInLegend: true,
+									indexLabelFontSize: 16,
+										dataPoints: [
+											{ y: 0},
+											{y: 136}
+										]
+									},
+									{        
+										type: "spline",
+										name: "Golden Goal",
+									        showInLegend: true,
+									indexLabelFontSize: 16,
+										dataPoints: [
+											{ y: 0},
+											{y: 44}
+										]
+									},
+								        {        
+										type: "spline",
+										name: "Irving",
+									        showInLegend: true,
+									indexLabelFontSize: 16,
+										dataPoints: [
+											{ y: 0},
+											{y: 108}
+										]
+									},
+								        {        
+										type: "spline",
+										name: "FPL Dylan",
+									        showInLegend: true,
+									indexLabelFontSize: 16,
+										dataPoints: [
+											{ y: 0},
+											{y: 65}
+										]
+									},
+								        ]
+									// options: {
+									//	scales: {
+									//	   x: [{
+									//		ticks: {
+									//		  beginAtZero: true,
+									//		  display: false 
+									//		}
+									//	      }]
+									//	}
+									//    }
+								});
+								chart2.render(); 
+									
+								function toogleDataSeries(e){
+									if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+										e.dataSeries.visible = false;
+									} else{
+										e.dataSeries.visible = true;
+									}
+									chart2.render();
+								}	
+						
+								}
+								</script>
+								<div id="MD2Liga" style="height: 300px; width: 100%;"></div>
+								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+								</div>
+								-->
+
+			
+						
+						
+						
+
+				<!-- Sidebar -->
+					<!--<section id="sidebar">-->
+
+						<!-- Intro -->
+							<section id="intro">
+								<div style="display: block; justify-content: center;">
+									<img src="images/logo.png" width="100" height="100" align="middle" alt="" />
+								</div>
+									<header>
+										<h2>Cuervos Fantasy Club</h2>
+										<p>Elite Fantasy Football Club</p>
+									</header>
+							</section>
+
+						
+							
+						<!-- About -->
+							<section class="blurb">
+								<h2>About</h2>
+								<p>Grupo exclusivo de Champions League Fantasy. Por invitación únicamente.</p>
+							</section>
+
+						<!-- Footer -->
+							<section id="footer">
+								<div class="comp-info col-xs-4">
+             								<a class="logolink" title="UEFA Champions League" href="http://www.uefa.com/uefachampionsleague/">UEFA Champions League</a>
+           							</div>
+								<div class="comp-info col-xs-4">
+             								<a class="logolink" title="UEFA Champions League Fantasy" href="https://gaming.uefa.com/en/uclfantasy">UEFA Champions League Fantasy Hub</a>
+           							</div>
+							</section>
+
+					<!--</section>-->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</div>
+	</body>
+</html>
