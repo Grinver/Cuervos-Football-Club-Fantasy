@@ -296,178 +296,44 @@
                     {x: 10, y: 541}
                 ],
                 borderColor: 'rgba(255, 205, 86, 1)',
-                backgroundColor: 'rgba(255, 205, 86, 0.2)',<span class="ml-2" /><span class="inline-block w-3 h-3 rounded-full bg-neutral-a12 align-middle mb-[0.1rem]" />
+                backgroundColor: 'rgba(255, 205, 86, 0.2)',
+                showLine: true,
+                fill: false,
+                pointRadius: 5
+            }
+        ]
+    };
+	const config = {
+        type: 'scatter',
+        data: data,
+        options: {
+            scales: {
+                x: {
+                    type: 'linear',
+                    position: 'bottom',
+                    title: {
+                        display: true,
+                        text: 'Ranking Position'
+                    },
+                    min: 0,
+                    max: 10
+                },
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Points'
+                    },
+                    min: 0,
+                    max: 780
+                }
+            }
+        }
+    };
 
-				<h3 style="text-align:center">Copa Cuervos</h3>
-								<table>
-										<tr>
-											<td><b> Joao (66) </b></td>
-											<td> Irving (63) </td>
-										</tr>
-										<tr>
-											<td><b> Genaro (55) [TB Bench: 5]</b></td>
-											<td> FPL Dylan (55) [TB Bench: 3]</td>
-										</tr>
-										<tr>
-											<td><b> Golden Goal (62) </b></td>
-											<td>  Alfredo (46)</td>
-										</tr>
-										
-								</table>
-								<p> </p> 
-								<h3 style="text-align:center">Copa Cuervos Faceoffs</h3>
-								<table>
-										<tr>
-											<td> </td>
-											<td> Alfredo </td>
-											<td> Genaro </td>
-											<td> Irving </td>
-											<td> Joao </td>
-											<td> FPL Dylan </td>
-											<td> Golden Goal </td>
-											<td> Alfredo (II)</td>
-											<td> Genaro (II)</td>
-											<td> Irving (II)</td>
-											<td> Joao (II)</td>
-											<td> FPL Dylan (II)</td>
-											<td> Golden Goal (II)</td>
-										</tr>
-										<tr>
-											<td> Alfredo </td>
-											<td bgcolor="#FFFC33">X</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td> </td>
-											<td bgcolor="#A2FF33">W</td>
-											<td> </td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#EA7E66">L</td>
-										</tr>
-										<tr>
-											<td> Genaro </td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td> </td>
-											<td bgcolor="#FFFC33">X</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td> </td>
-										</tr>
-										<tr>
-											<td> Irving </td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td> </td>
-											<td> </td>
-											
-										</tr>
-										<tr>
-											<td> Joao </td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td> </td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td> </td>
-											<td bgcolor="#A2FF33">W</td>
-										</tr>
-										<tr>
-											<td> FPL Dylan </td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td> </td>
-											<td> </td>
-											<td bgcolor="#FFFC33">X</td>
-											<td bgcolor="#EA7E66">L</td>
-										</tr>
-										<tr>
-											<td>Golden Goal </td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td> </td>
-											<td> </td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#FFFC33">X</td>
-										</tr>
-								</table>
-								<p> </p> 
-
-							
-								<h3 style="text-align:center">Copa Cuervos Standings</h3>
- 								<table class="tablec">
-  										<tr>
-  									    		<td bgcolor="#A2FF33">1</td>
-   									   		<td>Joao</td>
-  									    		<td>6-2</td>											   
-										</tr>
+    const myScatterChart = new Chart(ctx, config);
+</script>
 			
-  										<tr>
-  									    		<td bgcolor="#FFFC33">2</td>
-   									   		<td>FPL Dylan</td>
-  											<td>5-3</td>
- 									   	</tr>
-														
-  										<tr>
-  											<td bgcolor="#FFA500">3</td>
-   									 		<td>Alfredo</td>
-  									    		<td>5-2</td>
- 									   	</tr>
-														
-  										<tr>
-  									    		<td bgcolor="#FFA500">4</td>
-   									   		<td>Irving</td>
-  									    		<td>3-5</td>
- 									   	</tr>
-														
-  										<tr>
-  									    		<td bgcolor="#EA7E66">5</td>
-   									   		<td>Golden Goal</td>
-  									    		<td>3-5</td>
- 									   	</tr>
-										<tr>
-  									    		<td bgcolor="#EA7E66">6</td>
-   									   		<td>Genaro</td>
-  									    		<td>2-6</td>
- 									   	</tr>
-									
-  										
-
-								</table>
-
 							
 								
 								
@@ -722,177 +588,7 @@
     const myScatterChart = new Chart(ctx, config);
 </script>
 
-				<h3 style="text-align:center">Copa Cuervos</h3>
-								<table>
-										<tr>
-											<td><b> Genaro (64) </b></td>
-											<td> Joao (54) </td>
-										</tr>
-										<tr>
-											<td><b> Alfredo (89) </b></td>
-											<td> Irving (65) </td>
-										</tr>
-										<tr>
-											<td><b> Golden Goal (101) </b></td>
-											<td>  FPL Dylan (98)</td>
-										</tr>
-										
-								</table>
-								<p> </p> 
-								<h3 style="text-align:center">Copa Cuervos Faceoffs</h3>
-								<table>
-										<tr>
-											<td> </td>
-											<td> Alfredo </td>
-											<td> Genaro </td>
-											<td> Irving </td>
-											<td> Joao </td>
-											<td> FPL Dylan </td>
-											<td> Golden Goal </td>
-											<td> Alfredo (II)</td>
-											<td> Genaro (II)</td>
-											<td> Irving (II)</td>
-											<td> Joao (II)</td>
-											<td> FPL Dylan (II)</td>
-											<td> Golden Goal (II)</td>
-										</tr>
-										<tr>
-											<td> Alfredo </td>
-											<td bgcolor="#FFFC33">X</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td> </td>
-											<td bgcolor="#A2FF33">W</td>
-											<td> </td>
-											<td bgcolor="#A2FF33">W</td>
-											<td> </td>
-										</tr>
-										<tr>
-											<td> Genaro </td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td> </td>
-											<td bgcolor="#A2FF33">W</td>
-											<td> </td>
-											<td> </td>
-										</tr>
-										<tr>
-											<td> Irving </td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">W</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td> </td>
-											<td> </td>
-											<td> </td>
-											
-										</tr>
-										<tr>
-											<td> Joao </td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td> </td>
-											<td bgcolor="#EA7E66">L</td>
-											<td> </td>
-											<td bgcolor="#FFFC33">X</td>
-											<td> </td>
-											<td bgcolor="#A2FF33">W</td>
-										</tr>
-										<tr>
-											<td> FPL Dylan </td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td> </td>
-											<td> </td>
-											<td> </td>
-											<td bgcolor="#FFFC33">X</td>
-											<td bgcolor="#EA7E66">L</td>
-										</tr>
-										<tr>
-											<td>Golden Goal </td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#FFFC33">X</td>
-											<td> </td>
-											<td> </td>
-											<td> </td>
-											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#A2FF33">W</td>
-											<td bgcolor="#FFFC33">X</td>
-										</tr>
-								</table>
-								<p> </p> 
-
-							
-								<h3 style="text-align:center">Copa Cuervos Standings</h3>
- 								<table class="tablec">
-  										<tr>
-  									    		<td bgcolor="#A2FF33">1</td>
-   									   		<td>FPL Dylan</td>
-  									    		<td>5-2</td>											   
-										</tr>
-			
-  										<tr>
-  									    		<td bgcolor="#FFFC33">2</td>
-   									   		<td>Joao</td>
-  											<td>5-2</td>
- 									   	</tr>
-														
-  										<tr>
-  											<td bgcolor="#FFA500">3</td>
-   									 		<td>Alfredo</td>
-  									    		<td>5-2</td>
- 									   	</tr>
-														
-  										<tr>
-  									    		<td bgcolor="#FFA500">4</td>
-   									   		<td>Irving</td>
-  									    		<td>3-4</td>
- 									   	</tr>
-														
-  										<tr>
-  									    		<td bgcolor="#EA7E66">5</td>
-   									   		<td>Golden Goal</td>
-  									    		<td>2-5</td>
- 									   	</tr>
-										<tr>
-  									    		<td bgcolor="#EA7E66">6</td>
-   									   		<td>Genaro</td>
-  									    		<td>1-6</td>
- 									   	</tr>
-									
-  										
-
-								</table>
-
-							
+				
 								
 								
 								<p> </p>
@@ -1144,15 +840,15 @@
 								<table>
 										<tr>
 											<td><b> Joao (69) </b></td>
-											<td> Golden Goal (74) </td>
-										</tr>
-										<tr>
-											<td><b> Alfredo (67) </b></td>
 											<td> FPL Dylan (55) </td>
 										</tr>
 										<tr>
+											<td><b> Alfredo (67) </b></td>
+											<td> Genaro (66) </td>
+										</tr>
+										<tr>
 											<td><b> Irving (74) </b></td>
-											<td>  Genaro (66)</td>
+											<td>  Golden Goal (62)</td>
 										</tr>
 										
 								</table>
@@ -1183,10 +879,10 @@
 											<td bgcolor="#EA7E66">L</td>
 											<td bgcolor="#A2FF33">W</td>
 											<td bgcolor="#FFFC33">X</td>
-											<td> </td>
-											<td> </td>
-											<td> </td>
 											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
 											<td> </td>
 										</tr>
 										<tr>
@@ -1196,7 +892,7 @@
 											<td bgcolor="#EA7E66">L</td>
 											<td bgcolor="#EA7E66">L</td>
 											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">L</td>
+											<td bgcolor="#A2FF33">L</td>
 											<td bgcolor="#EA7E66">L</td>
 											<td bgcolor="#FFFC33">X</td>
 											<td> </td>
@@ -1211,13 +907,13 @@
 											<td bgcolor="#FFFC33">X</td>
 											<td bgcolor="#EA7E66">L</td>
 											<td bgcolor="#EA7E66">L</td>
-											<td bgcolor="#EA7E66">W</td>
-											<td> </td>
 											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
 											<td bgcolor="#FFFC33">X</td>
 											<td> </td>
 											<td> </td>
-											<td> </td>
+											<td bgcolor="#A2FF33">W</td>
 											
 										</tr>
 										<tr>
@@ -1232,8 +928,8 @@
 											<td> </td>
 											<td> </td>
 											<td bgcolor="#FFFC33">X</td>
-											<td> </td>
 											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
 										</tr>
 										<tr>
 											<td> FPL Dylan </td>
@@ -1243,10 +939,10 @@
 											<td bgcolor="#A2FF33">W</td>
 											<td bgcolor="#FFFC33">X</td>
 											<td bgcolor="#A2FF33">W</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
 											<td bgcolor="#EA7E66">L</td>
-											<td> </td>
-											<td> </td>
-											<td> </td>
 											<td bgcolor="#FFFC33">X</td>
 											<td> </td>
 										</tr>
@@ -1260,8 +956,8 @@
 											<td bgcolor="#FFFC33">X</td>
 											<td> </td>
 											<td> </td>
-											<td> </td>
 											<td bgcolor="#EA7E66">L</td>
+											<td> </td>
 											<td> </td>
 											<td bgcolor="#FFFC33">X</td>
 										</tr>
@@ -1363,7 +1059,8 @@
 								
 									<h3 style = "text-align:center">News and Observations</h3>
 									<ul>
-  										<li><p>FPL Dylan finally lost for the first time against the mighty Alfredo. </p></li>
+  										<li><p>FPL Dylan finally lost for the first time against the mighty Joao. </p></li>
+										<li><p> Genaro lost once more against Alfredo in the famous Andazola Bowl.</p>. </p></li>
 										<li><p> Joao maintains a comfortable lead in the league</p></li>
 										<li><p> Irving finally won top of matchday.</p></li>
 										<li><p> The following will face each other on Matchday 9.</p>										
@@ -1373,14 +1070,14 @@
 											</tr>
 											<tr>
 												<td>Joao</td>
-												<td>Genaro</td>
-											</tr>
-											<tr>
-												<td>Golden Goal</td>
-												<td>FPL Dylan</td></td>
+												<td>Alfredo</td>
 											</tr>
 											<tr>
 												<td>Irving</td>
+												<td>FPL Dylan</td></td>
+											</tr>
+											<tr>
+												<td>Joao</td>
 												<td>Alfredo</td>
 											</tr>
 										
@@ -2188,14 +1885,14 @@
 											</tr>
 											<tr>
 												<td>Irving</td>
-												<td>FPL Dylan</td>
+												<td>Golden Goal</td>
 											</tr>
 											<tr>
 												<td>Alfredo</td>
-												<td>Joao</td>
+												<td>Genaro</td>
 											</tr>
 											<tr>
-												<td>Genaro</td>
+												<td>Irving</td>
 												<td>Golden Goal</td>
 											</tr>
 										
@@ -3866,15 +3563,15 @@
 								<table>
 										<tr>
 											<td>Irving</td>
-											<td>Genaro</td>
-										</tr>
-										<tr>
-											<td>Joao</td>
 											<td>Golden Goal</td>
 										</tr>
 										<tr>
-											<td>Alfredo</td>
+											<td>Joao</td>
 											<td>FPL Dylan</td>
+										</tr>
+										<tr>
+											<td>Alfredo</td>
+											<td>Genaro</td>
 										</tr>
 										
 								</table>
@@ -3884,16 +3581,16 @@
 								<h3 style="text-align:center">Matchday 9</h3>
 								<table>
 										<tr>
-											<td>Genaro</td>
+											<td>Alfredo</td>
 											<td>Joao</td>
 										</tr>
 										<tr>
-											<td>Golden Goal</td>
+											<td>Irving</td>
 											<td>FPL Dylan</td>
 										</tr>
 										<tr>
-											<td>Alfredo</td>
-											<td>Irving</td>
+											<td>Genaro</td>
+											<td>Golden Goal</td>
 										</tr>
 										
 								</table>
@@ -3903,15 +3600,15 @@
 								<table>
 										<tr>
 											<td>Irving</td>
-											<td>Joao</td>
+											<td>Genaro</td>
 										</tr>
 										<tr>
-											<td>Genaro</td>
+											<td>Alfredo</td>
 											<td>FPL Dylan</td>
 										</tr>
 										<tr>
 											<td>Golden Goal</td>
-											<td>Alfredo</td>
+											<td>Joao</td>
 										</tr>
 										
 								</table>
@@ -3919,16 +3616,16 @@
 								<h3 style="text-align:center">Matchday 11</h3>
 								<table>
 										<tr>
-											<td>Joao</td>
+											<td>Golden Goal</td>
 											<td>FPL Dylan</td>
 										</tr>
 										<tr>
-											<td>Alfredo</td>
+											<td>Joao</td>
 											<td>Genaro</td>
 										</tr>
 										<tr>
 											<td>Irving</td>
-											<td>Golden Goal</td>
+											<td>Alfredo</td>
 										</tr>
 										
 								</table>
@@ -3937,15 +3634,15 @@
 								<table>
 										<tr>
 											<td>Irving</td>
-											<td>FPL Dylan</td>
+											<td>Joao</td>
 										</tr>
 										<tr>
-											<td>Joao</td>
+											<td>Golden Goal</td>
 											<td>Alfredo</td>
 										</tr>
 										<tr>
 											<td>Genaro</td>
-											<td>Golden Goal</td>
+											<td>FPL Dylan</td>
 										</tr>
 										
 								</table>
